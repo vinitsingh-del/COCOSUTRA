@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugar Free Drinking Chocolate Collection - Cocosutra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cocoa:#1A1A1A; --cocoa-2:#202020; --cocoa-3:#303033;
+  --gold:#DF5924; --gold-pale:#DF5924; --cream:#FFFFFF; --cream-2:#F6F6F4;
+  --parchment:#FFFFFF; --white:#FFFFFF; --ink:#303033; --ink-2:#4B4B4D;
+  --ink-3:#77777A; --rule:#E7E7E4; --tile:#F4F4F1; --mint:#FFFFFF;
+  --berry:#DF5924; --blue:#F4F4F1; --leaf:#DF5924; --shadow:0 24px 70px rgba(26,26,26,.12);
+}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Poppins',sans-serif;overflow-x:hidden;background:var(--parchment);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+button,a{font:inherit}
+button{cursor:pointer}
+img{display:block}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+.announce{background:var(--cocoa);color:var(--cream);text-align:center;padding:8px 14px;font-size:11.5px;letter-spacing:.03em}
+.announce strong{color:var(--cream);font-weight:700}
+
+nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:300}
+.nav-inner{max-width:1360px;margin:0 auto;padding:0 16px;height:60px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.nav-burger{justify-self:start;background:none;border:none;padding:8px;display:flex;flex-direction:column;gap:5px}
+.nav-burger span{display:block;width:22px;height:1.6px;background:var(--cocoa)}
+.nav-logo{justify-self:center}
+.nav-logo img{height:34px;width:auto}
+.nav-ic{justify-self:end;display:flex;align-items:center;gap:14px}
+.nav-ic button{background:none;border:none;padding:2px;color:var(--cocoa);position:relative;display:flex}
+.nav-ic svg{width:21px;height:21px;stroke:var(--cocoa);fill:none;stroke-width:1.7}
+.nav-cartn{position:absolute;top:-6px;right:-7px;background:var(--cocoa);color:var(--cream);font-size:9px;font-weight:700;min-width:15px;height:15px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0 3px}
+.nav-links{display:none}
+
+.hero{position:relative;min-height:calc(100svh - 92px);background:var(--cocoa);overflow:hidden;isolation:isolate}
+.hero::after{content:'';position:absolute;left:0;right:0;bottom:0;height:190px;z-index:1;background:linear-gradient(180deg,rgba(26,26,26,0),rgba(26,26,26,.72) 58%,var(--cocoa) 100%);pointer-events:none}
+.hero-bg,.hero-video,.hero-mist,.hero-product,.hero-cup,.hero-beans{position:absolute;pointer-events:none;will-change:transform}
+.hero-bg{inset:-10% -7%;background:linear-gradient(115deg,rgba(26,26,26,.94),rgba(32,32,32,.82) 48%,rgba(223,89,36,.22)),url('https://cocosutra.com/cdn/shop/files/CocosutraSugarFreeDrinkingChocolateSingleServeHamper_12Sachets_-Lifestyle.jpg?v=1758940881&width=1800') center/cover;z-index:-5;filter:saturate(.92);transform-origin:62% 42%}
+.hero-video{inset:0;width:100%;height:100%;object-fit:cover;object-position:center 44%;z-index:-4;filter:saturate(.95) contrast(1.04)}
+.hero-mist{inset:0;z-index:-3;background:linear-gradient(105deg,rgba(26,26,26,.94) 0%,rgba(26,26,26,.76) 54%,rgba(26,26,26,.34) 100%),radial-gradient(circle at 74% 22%,rgba(223,89,36,.22),transparent 25%),linear-gradient(0deg,rgba(26,26,26,.78),transparent 54%)}
+.hero-product{display:none;right:2vw;bottom:7vh;width:min(38vw,500px);max-height:58vh;object-fit:cover;border-radius:8px;box-shadow:0 38px 90px rgba(0,0,0,.38);z-index:-1;rotate:-3deg}
+.hero-cup{display:none;right:31vw;bottom:9vh;width:min(17vw,210px);border-radius:8px;box-shadow:var(--shadow);opacity:.94;background:#F4F4F1}
+.hero-beans{display:none;left:-70px;bottom:2vh;width:min(28vw,320px);height:min(28vw,320px);border-radius:50%;background:radial-gradient(circle at 38% 38%,rgba(255,255,255,.18),transparent 18%),radial-gradient(circle at 70% 50%,rgba(223,89,36,.32),transparent 8%),rgba(26,26,26,.62);filter:blur(.2px);opacity:.45}
+.hero-inner{position:relative;z-index:2;max-width:1360px;margin:0 auto;padding:70px 20px 58px;min-height:calc(100svh - 92px);display:grid;align-items:center}
+.hero-copy{max-width:660px}
+.hero-eye{display:inline-flex;align-items:center;gap:9px;font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.hero-eye::before{content:'';width:26px;height:1px;background:var(--gold)}
+.hero h1{font-family:'Fraunces',serif;font-weight:500;color:var(--cream);line-height:.94;margin-bottom:16px;max-width:760px;text-shadow:0 4px 26px rgba(0,0,0,.55)}
+.hero h1 .l1{display:block;font-size:clamp(40px,9vw,118px);color:rgba(255,255,255,.86);font-weight:400}
+.hero h1 .l2{display:block;font-style:italic;font-weight:650;font-size:clamp(50px,11vw,142px);color:var(--cream);line-height:.86}
+.hero p{color:rgba(255,255,255,.9);font-size:clamp(14px,1.5vw,17px);font-weight:400;max-width:430px;line-height:1.58;text-shadow:0 3px 18px rgba(0,0,0,.55)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.hero-btn{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:13px 22px;text-decoration:none;color:var(--cream);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.08);backdrop-filter:blur(10px)}
+.hero-btn.primary{background:var(--gold);border-color:var(--gold);color:var(--white)}
+.hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:580px;margin-top:34px}
+.hm{padding:14px 14px 13px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border-radius:8px}
+.hm b{font-family:'Fraunces',serif;font-size:30px;font-weight:650;color:var(--cream);line-height:1}
+.hm span{display:block;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.58);margin-top:5px}
+.scroll-cue{position:absolute;left:20px;bottom:20px;z-index:4;color:rgba(255,255,255,.58);font-size:10px;letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.scroll-cue::before{content:'';width:34px;height:1px;background:rgba(255,255,255,.35)}
+
+.marquee{background:var(--cocoa-2);overflow:hidden;padding:12px 0;border-top:1px solid rgba(255,255,255,.05)}
+.marquee-track{display:flex;width:max-content;animation:scroll 30s linear infinite}
+.m-item{display:flex;align-items:center;gap:8px;padding:0 26px;font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-2);white-space:nowrap}
+.m-dot{width:4px;height:4px;border-radius:50%;background:var(--gold)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes heroZoom{
+  0%{scale:1;translate:0 0;background-position:50% 50%}
+  45%{scale:1.055;translate:-1.2% .8%;background-position:55% 48%}
+  100%{scale:1.11;translate:1.5% -1%;background-position:61% 46%}
+}
+
+.story{position:relative;background:var(--white);padding:70px 18px 54px;overflow:hidden}
+.story::before{content:'JOY';position:absolute;right:-2vw;top:12px;font-family:'Fraunces',serif;font-size:min(20vw,250px);font-style:italic;color:rgba(223,89,36,.08);line-height:1}
+.story-inner{max-width:1220px;margin:0 auto;display:grid;gap:30px}
+.story-copy{position:relative;z-index:2}
+.kicker{font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.story h2,.coll-head h2,.ritual-copy h2,.faq-head h2{font-family:'Fraunces',serif;font-size:clamp(32px,6vw,70px);font-weight:550;line-height:1;color:var(--cocoa)}
+.story h2 em,.ritual-copy h2 em{font-style:italic;color:var(--berry)}
+.story p{font-size:14px;color:var(--ink-2);max-width:620px;line-height:1.85;margin-top:16px}
+.proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:560px}
+.proof{position:relative;overflow:hidden;background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px;box-shadow:0 10px 30px rgba(26,26,26,.05)}
+.proof::after,.r-card::after{content:'';position:absolute;inset:-40% auto -40% -75%;width:48%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-18deg);animation:shineSweep 7.5s ease-in-out infinite;pointer-events:none}
+.proof:nth-child(2)::after{animation-delay:.8s}
+.proof:nth-child(3)::after{animation-delay:1.6s}
+.proof:nth-child(4)::after{animation-delay:2.4s}
+.proof strong{display:block;font-family:'Fraunces',serif;font-size:26px;color:var(--cocoa);line-height:1}
+.proof span{display:block;color:var(--ink-3);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
+.story-visual{min-height:420px;position:relative}
+.orbit{position:sticky;top:92px;min-height:420px;border:1px solid var(--rule);border-radius:8px;background:linear-gradient(135deg,#fff 0%,#F7F7F4 58%,rgba(223,89,36,.08) 100%);overflow:hidden;box-shadow:0 30px 80px rgba(26,26,26,.08)}
+.orbit::before{content:'';position:absolute;inset:18px;border:1px solid rgba(26,26,26,.08);border-radius:6px}
+.orbit::after{content:'ZERO SUGAR';position:absolute;left:24px;bottom:20px;font-size:11px;font-weight:800;letter-spacing:.2em;color:rgba(26,26,26,.2)}
+.orb-img{position:absolute;border-radius:8px;box-shadow:var(--shadow);overflow:hidden;background:var(--tile)}
+.orb-img img{width:100%;height:100%;object-fit:cover}
+.orb-main{right:6%;top:46px;width:58%;aspect-ratio:1/1}
+.orb-mini{left:6%;top:28px;width:34%;aspect-ratio:4/5;rotate:-6deg}
+.orb-sachet{left:16%;bottom:38px;width:34%;aspect-ratio:1/1;rotate:5deg}
+.ingredient-pill{position:absolute;right:24px;bottom:34px;background:var(--cocoa);color:var(--cream);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:18px;max-width:245px;box-shadow:var(--shadow)}
+.ingredient-pill b{display:block;font-family:'Fraunces',serif;font-size:24px;font-weight:550}
+.ingredient-pill span{display:block;color:rgba(255,255,255,.68);font-size:12px;margin-top:6px}
+
+.ritual{grid-area:ritual;margin-top:18px;padding:82px 34px 84px;background:var(--cocoa);color:var(--cream);position:relative;overflow:hidden;border-radius:10px;box-shadow:0 30px 90px rgba(26,26,26,.16)}
+.ritual::before{content:'JOY';position:absolute;right:-42px;top:8px;font-family:'Fraunces',serif;font-size:min(22vw,230px);font-style:italic;color:rgba(223,89,36,.12);line-height:1}
+.ritual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.06),transparent 80px),radial-gradient(circle at 18% 32%,rgba(223,89,36,.16),transparent 26%),radial-gradient(circle at 82% 66%,rgba(255,255,255,.08),transparent 28%)}
+.ritual-inner{position:relative;z-index:1;max-width:1220px;margin:0 auto;display:grid;gap:34px;align-items:center}
+.ritual-copy h2{color:var(--cream)}
+.ritual-copy h2 em{color:var(--gold-pale)}
+.ritual-copy p{font-size:14px;color:rgba(255,255,255,.68);line-height:1.7;margin-top:14px;max-width:500px}
+.review-metric{display:flex;align-items:baseline;gap:12px;margin-top:24px}
+.review-metric strong{position:relative;display:inline-block;font-family:'Fraunces',serif;font-size:52px;line-height:1;color:var(--gold);animation:ratingPulse 3.2s ease-in-out infinite}
+.review-metric span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.58)}
+.ritual-reviews{position:relative;min-height:480px}
+.review-orbit{position:sticky;top:92px;min-height:480px}
+.r-card{position:absolute;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:18px;box-shadow:0 26px 70px rgba(0,0,0,.22);backdrop-filter:blur(14px);max-width:330px;animation:cardGlow 7.5s ease-in-out infinite}
+.r-card.main{left:3%;top:28px;width:54%;background:var(--white);color:var(--ink)}
+.r-card.side{right:0;top:82px;width:42%}
+.r-card.low{left:22%;top:300px;width:50%}
+.r-card.side,.r-card.side::after{animation-delay:1.4s}
+.r-card.low,.r-card.low::after{animation-delay:2.8s}
+.r-stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:12px}
+.r-card p{font-family:'Fraunces',serif;font-size:20px;font-style:italic;line-height:1.35;margin-bottom:14px}
+.r-card.side p,.r-card.low p{font-size:16px;color:var(--cream)}
+.r-card b{display:block;font-size:12px;color:inherit}
+.r-card span{display:block;font-size:10.5px;color:rgba(255,255,255,.55);margin-top:2px}
+.r-card.main span{color:var(--ink-3)}
+.review-tag{position:absolute;right:7%;top:252px;background:var(--gold);color:var(--white);border-radius:999px;padding:11px 16px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+@keyframes shineSweep{
+  0%,34%{left:-75%;opacity:0}
+  43%{opacity:.8}
+  58%{left:130%;opacity:0}
+  100%{left:130%;opacity:0}
+}
+@keyframes cardGlow{
+  0%,34%,100%{box-shadow:0 26px 70px rgba(0,0,0,.22)}
+  48%{box-shadow:0 26px 70px rgba(0,0,0,.22),0 0 0 1px rgba(223,89,36,.28),0 0 34px rgba(223,89,36,.25)}
+}
+@keyframes ratingPulse{
+  0%,100%{text-shadow:0 0 0 rgba(223,89,36,0)}
+  45%,55%{text-shadow:0 0 22px rgba(223,89,36,.5)}
+}
+
+.coll-shell{background:var(--white);padding:54px 0 28px}
+.coll-head{text-align:center;padding:0 20px 12px}
+.coll-head h2{font-size:clamp(34px,5vw,64px)}
+.coll-head p{font-size:13px;color:var(--ink-3);margin:10px auto 0;font-weight:300;max-width:680px}
+.coll-head .kicker{color:var(--gold);font-weight:800;margin:0 0 10px;max-width:none}
+.tabs-wrap{max-width:1280px;margin:0 auto;padding:18px 16px 0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;position:sticky;top:61px;z-index:200;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,255,255,.88))}
+.tabs-wrap::-webkit-scrollbar{display:none}
+.f-tab{background:rgba(255,255,255,.72);border:1px solid var(--rule);color:var(--ink-2);padding:10px 18px;border-radius:999px;font-size:12.5px;font-family:'Poppins';white-space:nowrap;flex-shrink:0;transition:.18s;box-shadow:0 10px 24px rgba(26,26,26,.04)}
+.f-tab.active{background:var(--cocoa);border-color:var(--cocoa);color:var(--cream);font-weight:600}
+.collection{max-width:1280px;margin:0 auto;padding:20px 14px 44px;scroll-margin-top:130px}
+#product-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 14px}
+.pc{display:flex;flex-direction:column;min-width:0}
+.pc-media{position:relative;background:var(--tile);border-radius:8px;overflow:hidden;aspect-ratio:1/1;border:1px solid var(--rule)}
+.pc-media::after{content:'';position:absolute;inset:auto 0 0;height:32%;background:linear-gradient(0deg,rgba(26,26,26,.11),transparent);pointer-events:none}
+.pc-media img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
+.pc:hover .pc-media img{transform:scale(1.055) translateY(-2px)}
+.pc-badge{position:absolute;top:10px;left:10px;z-index:2;font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:999px}
+.b-best{background:var(--cocoa);color:var(--white)}
+.b-try{background:var(--gold);color:var(--white)}
+.b-lim{background:var(--gold);color:var(--white)}
+.pc-wish{position:absolute;top:9px;right:9px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.86);border:1px solid rgba(255,255,255,.45);display:flex;align-items:center;justify-content:center;color:var(--ink-2);transition:.15s}
+.pc-wish:hover{background:#fff;color:var(--gold)}
+.pc-wish svg{width:17px;height:17px}
+.pc-wish.on svg{fill:var(--gold);stroke:var(--gold)}
+.pc-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:2}
+.pc-dots i{width:5px;height:5px;border-radius:50%;background:rgba(26,26,26,.22)}
+.pc-dots i.on{background:var(--cocoa)}
+.pc-info{padding:11px 2px 0;display:flex;flex-direction:column}
+.pc-rate{display:flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--cocoa);animation:ratingPulse 4.8s ease-in-out infinite}
+.pc-star{color:var(--gold)}
+.pc-rc{color:var(--ink-3);font-weight:400}
+.pc-name{font-size:14.5px;font-weight:800;letter-spacing:.01em;color:var(--cocoa);margin-top:6px;line-height:1.2;text-transform:uppercase}
+.pc-sub{font-size:11px;color:var(--ink-3);margin-top:4px;line-height:1.4;font-weight:300}
+.pc-price-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-top:10px}
+.pc-price{font-size:15px;font-weight:800;color:var(--cocoa)}
+.pc-urg{font-size:10px;font-weight:700;color:var(--gold);margin-top:5px}
+.pc-add{margin-top:11px;width:100%;background:transparent;border:1.4px solid var(--cocoa);color:var(--cocoa);border-radius:999px;padding:11px;font-size:11.5px;font-weight:800;letter-spacing:.12em;font-family:'Poppins';transition:.15s;text-transform:uppercase}
+.pc-add:hover{background:var(--cocoa);color:var(--cream)}
+.pc-add.added{background:var(--leaf);border-color:var(--leaf);color:var(--cream)}
+
+.guide{max-width:1280px;margin:54px auto 0;padding:0 14px}
+.guide-box{background:var(--cocoa);border-radius:8px;overflow:hidden;box-shadow:var(--shadow)}
+.guide-left{padding:32px 24px;border-bottom:1px solid rgba(255,255,255,.07)}
+.g-eyebrow{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-pale);margin-bottom:10px}
+.g-head{font-family:'Fraunces',serif;font-size:30px;font-weight:550;font-style:italic;color:var(--cream);margin-bottom:9px;line-height:1.08}
+.g-body{font-size:12.5px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:20px;font-weight:300}
+.btn-quiz{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--white);border:none;border-radius:999px;padding:13px 24px;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-family:'Poppins'}
+.guide-right{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.06)}
+.g-card{background:var(--cocoa);padding:21px 18px;transition:.15s}
+.g-card:hover{background:rgba(255,255,255,.05)}
+.g-num{font-family:'Fraunces',serif;font-size:28px;font-weight:400;color:rgba(255,255,255,.15);line-height:1;margin-bottom:7px}
+.g-title{font-size:12.5px;font-weight:700;color:var(--cream);margin-bottom:5px}
+.g-desc{font-size:11px;color:rgba(255,255,255,.45);line-height:1.55;font-weight:300}
+
+.sp-section{max-width:1280px;margin:54px auto 0;padding:0 14px}
+.sp-head{font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);text-align:center;margin-bottom:18px}
+.reviews{display:grid;grid-template-columns:1fr;gap:10px}
+.rev-card{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:21px;box-shadow:0 12px 30px rgba(26,26,26,.04)}
+.rev-stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:9px}
+.rev-text{font-family:'Fraunces',serif;font-size:16px;font-style:italic;color:var(--ink);line-height:1.6;margin-bottom:12px}
+.rev-author{font-size:12px;font-weight:700;color:var(--cocoa)}
+.rev-product{font-size:10.5px;color:var(--ink-3);margin-top:2px}
+
+.faq-section{max-width:1280px;margin:54px auto 0;padding:0 14px}
+.faq-head{text-align:center;margin-bottom:22px}
+.faq-head h2{font-size:clamp(30px,4vw,48px)}
+.faq-head p{font-size:12.5px;color:var(--ink-3);font-weight:300}
+.faq-grid{display:grid;grid-template-columns:1fr;gap:8px}
+.faq-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.faq-q{padding:15px 16px;font-size:13px;font-weight:700;color:var(--cocoa);display:flex;justify-content:space-between;gap:10px;line-height:1.4}
+.faq-q:hover,.faq-q.open{background:var(--cream)}
+.faq-tog{font-size:19px;color:var(--gold);transition:transform .22s;flex-shrink:0;font-weight:300}
+.faq-q.open .faq-tog{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 16px 15px;font-size:12.5px;color:var(--ink-2);line-height:1.7;font-weight:300}
+.faq-a.open{display:block}
+
+.footer-band{max-width:1280px;margin:54px auto 0;padding:0 14px}
+.fb-box{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:30px 24px;text-align:center}
+.fb-box h3{font-family:'Fraunces',serif;font-size:26px;font-weight:550;color:var(--cocoa);margin-bottom:5px}
+.fb-box p{font-size:12.5px;color:var(--ink-2);font-weight:300;margin-bottom:18px}
+.fb-btns{display:flex;flex-direction:column;gap:9px}
+.btn-out,.btn-fill{padding:13px 22px;border-radius:999px;font-size:12.5px;font-weight:700;font-family:'Poppins'}
+.btn-out{border:1.4px solid var(--cocoa);background:transparent;color:var(--cocoa)}
+.btn-fill{border:none;background:var(--gold);color:var(--white)}
+
+.dock{position:fixed;bottom:0;left:0;right:0;z-index:250;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr 1fr;box-shadow:0 -4px 20px rgba(26,26,26,.07);transform:translateY(120%);opacity:0;pointer-events:none;transition:transform .28s ease,opacity .28s ease}
+.dock.show{transform:translateY(0);opacity:1;pointer-events:auto}
+.dock button{background:none;border:none;padding:11px 10px;font-family:'Poppins';display:flex;flex-direction:column;align-items:center;gap:1px}
+.dock button:first-child{border-right:1px solid var(--rule)}
+.dock .d-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cocoa)}
+.dock .d-val{font-size:11px;color:var(--ink-3);font-weight:300}
+
+/* BOTTOM SHEETS / MODALS */
+.ov{display:none;position:fixed;inset:0;background:rgba(26,26,26,.6);z-index:500;align-items:flex-end;justify-content:center}
+.ov.open{display:flex}
+.sheet{background:var(--white);border-radius:16px 16px 0 0;width:100%;max-width:560px;padding:22px 20px 30px;position:relative;max-height:88vh;overflow-y:auto}
+.sheet h3{font-family:'Fraunces',serif;font-size:22px;font-weight:500;color:var(--cocoa);margin-bottom:3px}
+.sheet .sub{font-size:12px;color:var(--ink-3);margin-bottom:16px;font-weight:300}
+.sheet-x{position:absolute;top:14px;right:14px;background:none;border:none;font-size:22px;color:var(--ink-3);cursor:pointer;width:40px;height:40px}
+.opt{display:flex;align-items:center;gap:12px;padding:13px 14px;border:1px solid var(--rule);border-radius:10px;cursor:pointer;margin-bottom:8px;transition:.15s}
+.opt:hover{border-color:var(--gold)}
+.opt.sel{border-color:var(--cocoa);background:var(--cream)}
+.opt .mark{width:18px;height:18px;border-radius:50%;border:1.6px solid var(--rule);flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.opt.sel .mark{border-color:var(--cocoa);background:var(--cocoa)}
+.opt.sel .mark::after{content:'';width:6px;height:6px;border-radius:50%;background:var(--cream)}
+.opt span{font-size:13.5px;color:var(--cocoa);font-weight:500}
+
+/* MOBILE MENU */
+.mob-menu{display:none;position:fixed;inset:0;background:var(--cocoa);z-index:600;padding:64px 26px 32px;flex-direction:column;gap:2px}
+.mob-menu.open{display:flex}
+.mob-menu a{text-decoration:none;color:var(--cream-2);font-family:'Fraunces',serif;font-size:26px;font-weight:400;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.mob-close{position:absolute;top:18px;right:20px;background:none;border:none;color:var(--cream);font-size:26px;cursor:pointer}
+
+/* QUIZ */
+.quiz-res{background:var(--cream);border:1px solid var(--rule);border-radius:10px;padding:16px;margin-top:14px;display:none}
+.quiz-res.show{display:block}
+.quiz-res h4{font-family:'Fraunces',serif;font-size:18px;font-weight:500;color:var(--cocoa);margin-bottom:4px}
+.quiz-res p{font-size:12.5px;color:var(--ink-2);margin-bottom:12px;font-weight:300;line-height:1.6}
+.btn-res{display:inline-block;background:var(--cocoa);color:var(--cream);padding:11px 22px;border-radius:40px;font-size:12px;font-weight:600;text-decoration:none}
+.q-opt .q-txt strong{display:block;font-size:13px;color:var(--cocoa);margin-bottom:2px}
+.q-opt .q-txt span{font-size:11.5px;color:var(--ink-3);font-weight:300;line-height:1.4}
+
+/* DESKTOP */
+@media(min-width:760px){
+  .nav-inner{grid-template-columns:1fr auto 1fr;padding:0 28px;height:66px}
+  .nav-burger{display:none}
+  .nav-links{display:flex;gap:24px;justify-self:start;list-style:none}
+  .nav-links a{text-decoration:none;color:var(--ink);font-size:13px;opacity:.62}
+  .nav-links a.active,.nav-links a:hover{opacity:1;color:var(--gold)}
+  .hero-inner{padding:86px 28px 70px;min-height:calc(100svh - 99px)}
+  .story-inner{grid-template-columns:1fr 1fr;grid-template-areas:"copy visual" "proof visual" "ritual ritual";align-items:start}
+  .story-copy{grid-area:copy}
+  .story-visual{grid-area:visual}
+  .story-proof{grid-area:proof;margin-top:-10px}
+  .ritual-inner{grid-template-columns:.85fr 1.15fr}
+  #product-grid{grid-template-columns:repeat(4,1fr);gap:30px 18px}
+  .pc-name{font-size:15px}
+  .reviews{grid-template-columns:repeat(3,1fr)}
+  .faq-grid{grid-template-columns:1fr 1fr}
+  .guide-box{display:grid;grid-template-columns:5fr 7fr}
+  .guide-left{border-bottom:none;border-right:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;justify-content:center;padding:42px 36px}
+  .guide-right{grid-template-columns:1fr 1fr}
+  .fb-box{display:flex;align-items:center;justify-content:space-between;text-align:left;padding:34px 40px}
+  .fb-box p{margin-bottom:0}
+  .fb-btns{flex-direction:row;flex-shrink:0}
+  .dock{max-width:340px;right:24px;left:auto;bottom:24px;border-radius:50px;border:1px solid var(--rule);overflow:hidden}
+  body{padding-bottom:0}
+}
+@media(max-width:759px){
+  body{padding-bottom:74px}
+  .announce{font-size:10px;line-height:1.45;padding:7px 10px}
+  .nav-inner{height:58px;padding:0 14px}
+  .nav-logo img{height:29px}
+  .nav-ic{gap:10px}
+  .nav-ic svg{width:20px;height:20px}
+  .hero{min-height:660px}
+  .hero-bg{inset:-4% -48% 0 -18%;background-position:58% center}
+  .hero-product{display:none}
+  .hero-cup{width:34vw;right:-9vw;bottom:28px;opacity:.56}
+  .hero-beans{width:190px;height:190px;left:-108px;bottom:72px}
+  .hero-inner{min-height:660px;align-items:start;padding:46px 18px 28px}
+  .hero-copy{padding-top:8px;max-width:360px}
+  .hero-eye{font-size:9.5px;letter-spacing:.14em;margin-bottom:14px}
+  .hero h1{margin-bottom:12px}
+  .hero h1 .l1{font-size:clamp(38px,14vw,56px)}
+  .hero h1 .l2{font-size:clamp(50px,17vw,76px)}
+  .hero p{font-size:13px;line-height:1.62;max-width:330px}
+  .hero-actions{gap:8px;margin-top:20px}
+  .hero-btn{padding:12px 17px;font-size:10.5px;letter-spacing:.06em}
+  .hero-meta{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;gap:8px;margin-top:28px}
+  .hm{padding:12px 10px}
+  .hm b{font-size:26px}
+  .hm span{font-size:8.5px;letter-spacing:.07em}
+  .scroll-cue{display:none}
+  .marquee{padding:10px 0}
+  .m-item{font-size:9.5px;padding:0 18px}
+  .story{padding:44px 14px 34px}
+  .story::before{font-size:118px;right:-32px;top:4px}
+  .story-inner{display:block}
+  .story-copy,.story-visual,.story-proof,.ritual{grid-area:auto}
+  .story-visual,.story-proof,.ritual{margin-top:18px}
+  .kicker{font-size:9.5px;letter-spacing:.14em}
+  .story h2,.coll-head h2,.ritual-copy h2,.faq-head h2{font-size:clamp(32px,11vw,45px);line-height:1.02}
+  .story p{font-size:13px;line-height:1.68;margin-top:12px}
+  .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none;gap:8px}
+  .proof{padding:14px 12px;min-height:92px}
+  .proof strong{font-size:28px}
+  .proof span{font-size:9px;letter-spacing:.09em;line-height:1.35}
+  .story-visual{min-height:310px}
+  .orbit{position:relative;top:auto;min-height:310px}
+  .orbit::before{inset:10px}
+  .orbit::after{left:14px;bottom:12px;font-size:9px}
+  .orb-main{width:66%;right:-2%;top:44px}
+  .orb-mini{width:38%;left:5%;top:18px}
+  .orb-sachet{width:42%;left:8%;bottom:42px}
+  .ingredient-pill{right:8px;bottom:12px;max-width:168px;padding:12px}
+  .ingredient-pill b{font-size:18px}
+  .ingredient-pill span{font-size:10.5px;line-height:1.45}
+  .ritual{padding:32px 14px 30px;margin-top:18px;border-radius:9px}
+  .ritual::before{font-size:110px;right:-28px;top:8px}
+  .ritual-inner{gap:18px}
+  .ritual-copy p{font-size:12.5px;line-height:1.6;max-width:300px}
+  .review-metric{margin-top:18px;gap:9px}
+  .review-metric strong{font-size:42px}
+  .review-metric span{font-size:9px;letter-spacing:.1em;max-width:170px}
+  .ritual-reviews{min-height:0}
+  .review-orbit{position:relative;top:auto;min-height:0;display:flex;flex-direction:column;gap:10px}
+  .r-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:100%!important;padding:14px;max-width:none}
+  .r-card p{font-size:17px;line-height:1.32;margin-bottom:10px}
+  .r-card.side p,.r-card.low p{font-size:14px}
+  .review-tag{position:relative;right:auto;top:auto;align-self:flex-start;margin:2px 0 0;padding:9px 12px;font-size:9px;letter-spacing:.08em}
+  .coll-shell{padding-top:38px}
+  .coll-head{padding:0 16px 8px}
+  .coll-head h2{font-size:36px}
+  .coll-head p{font-size:12px;line-height:1.55}
+  .tabs-wrap{top:60px}
+  .f-tab{padding:9px 14px;font-size:11.5px}
+  .collection{padding:16px 10px 34px;scroll-margin-top:112px}
+  #product-grid{gap:22px 10px}
+  .pc-media{border-radius:7px}
+  .pc-badge{font-size:7.5px;padding:4px 7px;top:8px;left:8px}
+  .pc-wish{width:30px;height:30px;top:7px;right:7px}
+  .pc-wish svg{width:15px;height:15px}
+  .pc-info{padding-top:8px}
+  .pc-rate{font-size:10px;gap:3px;align-items:flex-start;line-height:1.25}
+  .pc-name{font-size:12.5px;line-height:1.18;margin-top:5px}
+  .pc-sub{font-size:9.5px;line-height:1.3}
+  .pc-price{font-size:13.5px}
+  .pc-add{font-size:10px;padding:10px;margin-top:9px}
+  .pc-urg{font-size:9px}
+  .guide,.sp-section,.faq-section,.footer-band{margin-top:38px}
+  .guide{padding:0 10px}
+  .guide-left{padding:26px 18px}
+  .guide-right{grid-template-columns:1fr}
+  .g-card{padding:18px}
+  .reviews{gap:8px}
+  .rev-card{padding:18px}
+  .faq-section{padding:0 10px}
+  .fb-box{padding:24px 18px}
+  .dock button{padding:10px}
+  .dock .d-lbl{font-size:10px}
+  .dock .d-val{font-size:10px}
+}
+@media(min-width:760px) and (max-width:1024px){
+  .hero{min-height:760px}
+  .hero::after{height:230px}
+  .hero-video{object-position:56% 42%}
+  .hero-mist{background:linear-gradient(105deg,rgba(26,26,26,.9) 0%,rgba(26,26,26,.72) 58%,rgba(26,26,26,.35) 100%),linear-gradient(0deg,rgba(26,26,26,.7),transparent 48%)}
+  .hero-inner{min-height:760px;padding:70px 36px 44px;align-items:center}
+  .hero-copy{max-width:680px}
+  .hero h1{max-width:600px;margin-bottom:18px}
+  .hero h1 .l1{font-size:clamp(52px,9vw,78px)}
+  .hero h1 .l2{font-size:clamp(62px,11vw,94px)}
+  .hero p{max-width:440px;font-size:17px;line-height:1.5}
+  .hero-actions{margin-top:28px}
+  .hero-btn{padding:14px 24px;font-size:12px}
+  .hero-meta{max-width:720px;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:42px}
+  .hm{padding:20px}
+  .hm b{font-size:42px}
+  .hm span{font-size:10px}
+  .scroll-cue{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-bg,.marquee-track,.proof::after,.r-card,.r-card::after,.review-metric strong,.pc-rate{animation:none}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Free shipping on orders above <strong>Rs. 999</strong> &nbsp;&middot;&nbsp; First order? Use <strong>FIRST10</strong> for 10% off</div>
+
+<nav>
+  <div class="nav-inner">
+    <button class="nav-burger" onclick="document.getElementById('mob-nav').classList.add('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="https://cocosutra.com/collections/sugar-free-drinking-chocolate" class="active">Sugar Free</a></li>
+      <li><a href="https://cocosutra.com/collections/hot-chocolate">Hot Chocolate</a></li>
+      <li><a href="https://cocosutra.com/collections/granola">Granola</a></li>
+      <li><a href="https://cocosutra.com/blogs/recipes">Recipes</a></li>
+    </ul>
+    <a class="nav-logo" href="https://cocosutra.com"><img src="https://cocosutra.com/cdn/shop/files/Cocosutra_Logo_with_tagline_Aligned_Version_Compressed.png?v=1694523340&width=320" alt="Cocosutra"></a>
+    <div class="nav-ic">
+      <button aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+      <button aria-label="Cart" onclick="location.href='https://cocosutra.com/cart'"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1.2 12.5a1 1 0 0 1-1 .9H8.2a1 1 0 0 1-1-.9L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="nav-cartn">0</span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mob-menu" id="mob-nav">
+  <button class="mob-close" onclick="document.getElementById('mob-nav').classList.remove('open')">&times;</button>
+  <a href="https://cocosutra.com/collections/sugar-free-drinking-chocolate">Sugar Free Chocolate</a>
+  <a href="https://cocosutra.com/collections/hot-chocolate">Hot Chocolate</a>
+  <a href="https://cocosutra.com/collections/granola">Granola</a>
+  <a href="https://cocosutra.com/collections/gourmet-cookies">Cookies</a>
+  <a href="https://cocosutra.com/blogs/recipes">Recipes</a>
+  <a href="https://cocosutra.com/pages/gifting">Gifting</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" data-speed="0.18"></div>
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://cocosutra.com/cdn/shop/files/CocosutraSugarFreeDrinkingChocolateSingleServeHamper_12Sachets_-Lifestyle.jpg?v=1758940881&width=1800">
+    <source src="watermark-removed-Create_a_parallalex_Video_as_i.mp4" type="video/mp4">
+  </video>
+  <div class="hero-mist" data-speed="0.1"></div>
+  <img class="hero-product" data-speed="-0.07" src="https://cocosutra.com/cdn/shop/files/CocosutraSugarFreeDrinkingChocolateSingleServeHamper_12Sachets_-Lifestyle.jpg?v=1758940881&width=900" alt="Sugar free drinking chocolate served cafe style">
+  <img class="hero-cup" data-speed="0.13" src="https://cocosutra.com/cdn/shop/files/CocosutraSwissVanillaSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479247&width=520" alt="Cocosutra Swiss Vanilla Sugar Free Drinking Chocolate">
+  <div class="hero-beans" data-speed="-0.12"></div>
+  <div class="hero-inner">
+    <div class="hero-copy reveal in">
+      <span class="hero-eye">Innovated to fuel JOY</span>
+      <h1><span class="l1">Zero Sugar</span><span class="l2">Daily Luxury</span></h1>
+      <p>Rich cocoa. Zero sugar. No aftertaste.</p>
+      <div class="hero-actions">
+        <a class="hero-btn primary" href="#products">Shop the Collection</a>
+        <button class="hero-btn" onclick="document.getElementById('quiz-modal').classList.add('open')">Find Your Cup</button>
+      </div>
+      <div class="hero-meta">
+        <div class="hm"><b>0g</b><span>Added Sugar</span></div>
+        <div class="hm"><b>2g</b><span>Net Carbs</span></div>
+        <div class="hm"><b>35</b><span>Calories Per Cup</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll for the ritual</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="m-item"><span class="m-dot"></span>Zero Sugar</span><span class="m-item"><span class="m-dot"></span>Diabetic Safe</span><span class="m-item"><span class="m-dot"></span>Keto Friendly</span><span class="m-item"><span class="m-dot"></span>Vegan</span><span class="m-item"><span class="m-dot"></span>Gluten Free</span><span class="m-item"><span class="m-dot"></span>Bean-to-Cup Cocoa</span><span class="m-item"><span class="m-dot"></span>No Aftertaste</span><span class="m-item"><span class="m-dot"></span>Nutritionist Recommended</span><span class="m-item"><span class="m-dot"></span>Made in India</span><span class="m-item"><span class="m-dot"></span>Zero Sugar</span><span class="m-item"><span class="m-dot"></span>Diabetic Safe</span><span class="m-item"><span class="m-dot"></span>Keto Friendly</span><span class="m-item"><span class="m-dot"></span>Vegan</span><span class="m-item"><span class="m-dot"></span>Gluten Free</span><span class="m-item"><span class="m-dot"></span>Bean-to-Cup Cocoa</span><span class="m-item"><span class="m-dot"></span>No Aftertaste</span><span class="m-item"><span class="m-dot"></span>Nutritionist Recommended</span><span class="m-item"><span class="m-dot"></span>Made in India</span>
+  </div>
+</div>
+
+<!-- IMMERSIVE STORY -->
+<section class="story">
+  <div class="story-inner">
+    <div class="story-copy reveal">
+      <p class="kicker">Cocoa indulgence, cleaned up</p>
+      <h2>Chocolate that feels like dessert, <em>without the sugar crash.</em></h2>
+      <p>Cocosutra's sugar-free collection keeps the brand promise from the original collection page: safe for diabetics, keto friendly, vegan, gluten free, antioxidant-rich, and versatile enough for hot chocolate, iced chocolate, mochas, frappes, thick shakes, and more.</p>
+    </div>
+    <div class="story-visual reveal">
+      <div class="orbit">
+        <div class="orb-img orb-main" data-speed="0.08"><img src="https://cocosutra.com/cdn/shop/files/CocosutraMochaSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479454&width=720" alt="Mocha sugar free drinking chocolate"></div>
+        <div class="orb-img orb-mini" data-speed="-0.06"><img src="https://cocosutra.com/cdn/shop/files/CocosutraFocusSugarFreeDrinkingChocolateMix200g-EnhancesMentalAlertness-Front_Website.jpg?v=1702469452&width=520" alt="Focus functional drinking chocolate"></div>
+        <div class="orb-img orb-sachet" data-speed="0.12"><img src="https://cocosutra.com/cdn/shop/files/COCOSU_1_b5f49af6-faed-4530-b3fc-736b5dbb85fb.jpg?v=1745492195&width=520" alt="Functional drinking chocolate sachets"></div>
+        <div class="ingredient-pill" data-speed="-0.04"><b>Stevia + Erythritol</b><span>Zero calorie natural sweeteners, blended to avoid the usual aftertaste.</span></div>
+      </div>
+    </div>
+    <div class="proof-grid story-proof reveal">
+      <div class="proof"><strong>6</strong><span>Classic flavours</span></div>
+      <div class="proof"><strong>6</strong><span>Functional wellness blends</span></div>
+      <div class="proof"><strong>20</strong><span>Sachet packs available</span></div>
+      <div class="proof"><strong>100%</strong><span>Sugar free</span></div>
+    </div>
+    <div class="ritual">
+  <div class="ritual-inner">
+    <div class="ritual-copy reveal">
+      <p class="kicker">Loved in daily rituals</p>
+      <h2>Real cups, <em>real joy.</em></h2>
+      <p>Short, sweet proof from people who made sugar-free chocolate part of their everyday routine.</p>
+      <div class="review-metric"><strong>4.7</strong><span>average rating across the collection</span></div>
+    </div>
+    <div class="ritual-reviews reveal">
+      <div class="review-orbit">
+        <article class="r-card main" data-speed="-0.015">
+          <div class="r-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"No sugar spike. Hot chocolate is back in my evenings."</p>
+          <b>Priya S.</b><span>Swiss Vanilla 200g</span>
+        </article>
+        <article class="r-card side" data-speed="0.018">
+          <div class="r-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"RELAX replaced my bedtime snack."</p>
+          <b>Arjun M.</b><span>RELAX blend</span>
+        </article>
+        <article class="r-card low" data-speed="-0.012">
+          <div class="r-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The sampler made choosing easy."</p>
+          <b>Neha K.</b><span>6-flavour sampler</span>
+        </article>
+        <div class="review-tag" data-speed="0.015">Diabetic & Keto Friendly</div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<main class="coll-shell">
+<!-- HEADING -->
+<div class="coll-head">
+  <p class="kicker">Sugar Free Drinking Chocolate</p>
+  <h2>The complete chocolate collection</h2>
+  <p>Shop 16 zero-sugar drinking chocolates across classic flavours, functional wellness blends, tins, sachets, and curated combos.</p>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap">
+  <button class="f-tab active" onclick="filterProducts('all',this)">All Products</button>
+  <button class="f-tab" onclick="filterProducts('classic',this)">Classic Flavours</button>
+  <button class="f-tab" onclick="filterProducts('functional',this)">Functional Wellness</button>
+</div>
+
+<!-- COLLECTION -->
+<div class="collection" id="products">
+  <div id="product-grid">
+      <article class="pc" data-category="classic" data-price="579" data-reviews="25">
+        <div class="pc-media">
+          <span class="pc-badge b-best">Best Seller</span>
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraSwissVanillaSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479247&width=500" alt="Swiss Vanilla" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 25 reviews</span></div>
+          <h3 class="pc-name">Swiss Vanilla</h3>
+          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 579</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="classic" data-price="579" data-reviews="22">
+        <div class="pc-media">
+          <span class="pc-badge b-best">Best Seller</span>
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraMochaSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479454&width=500" alt="Mocha" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 22 reviews</span></div>
+          <h3 class="pc-name">Mocha</h3>
+          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 579</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="classic" data-price="579" data-reviews="15">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraPeppermintSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702485062&width=500" alt="Peppermint" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 15 reviews</span></div>
+          <h3 class="pc-name">Peppermint</h3>
+          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 579</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="classic" data-price="579" data-reviews="13">
+        <div class="pc-media">
+          <span class="pc-badge b-lim">Limited</span>
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraMexicanSpicedSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479569&width=500" alt="Mexican Spiced" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 13 reviews</span></div>
+          <h3 class="pc-name">Mexican Spiced</h3>
+          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 579</span>
+          </div>
+          <div class="pc-urg">Low stock &mdash; only 5 remaining</div>
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="classic" data-price="579" data-reviews="12">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraHazelnutSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702480082&width=500" alt="Hazelnut" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 12 reviews</span></div>
+          <h3 class="pc-name">Hazelnut</h3>
+          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 579</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="classic" data-price="579" data-reviews="10">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraCaramelSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702484961&width=500" alt="Caramel" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 10 reviews</span></div>
+          <h3 class="pc-name">Caramel</h3>
+          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 579</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="650" data-reviews="52">
+        <div class="pc-media">
+          <span class="pc-badge b-best">Best Seller</span>
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraFocusSugarFreeDrinkingChocolateMix200g-EnhancesMentalAlertness-Front_Website.jpg?v=1702469452&width=500" alt="FOCUS" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 52 reviews</span></div>
+          <h3 class="pc-name">FOCUS</h3>
+          <p class="pc-sub">200g &middot; Ashwagandha and Brahmi</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 650</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="650" data-reviews="42">
+        <div class="pc-media">
+          <span class="pc-badge b-best">Best Seller</span>
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraRelax-MelatoninBasedSugarFreeDrinkingChocolateMix200g-Front_Website.jpg?v=1702469537&width=500" alt="RELAX" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 42 reviews</span></div>
+          <h3 class="pc-name">RELAX</h3>
+          <p class="pc-sub">200g &middot; Melatonin and Chamomile</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 650</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="650" data-reviews="15">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraBalanceSugarFreeDrinkingChocolateMix200g-ForGutHealth-Front_Website.jpg?v=1702469382&width=500" alt="BALANCE" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 15 reviews</span></div>
+          <h3 class="pc-name">BALANCE</h3>
+          <p class="pc-sub">200g &middot; Prebiotics and Digestive Enzymes</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 650</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="650" data-reviews="12">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/CocosutraDefendSugarFreeDrinkingChocolateMix200g-ForStrength_Immunity-Front_Website.jpg?v=1702469218&width=500" alt="DEFEND" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 12 reviews</span></div>
+          <h3 class="pc-name">DEFEND</h3>
+          <p class="pc-sub">200g &middot; Zinc, Vitamin C, Elderberry</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 650</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="650" data-reviews="12">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/COCOSU_4_b14c32d6-5dbc-4823-b03e-255d31ab4feb.jpg?v=1702469679&width=500" alt="GLOW" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 12 reviews</span></div>
+          <h3 class="pc-name">GLOW</h3>
+          <p class="pc-sub">200g &middot; Collagen and Biotin</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 650</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="650" data-reviews="10">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/COCOSU_4.jpg?v=1702469604&width=500" alt="SOOTHE" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 10 reviews</span></div>
+          <h3 class="pc-name">SOOTHE</h3>
+          <p class="pc-sub">200g &middot; Shatavari and Magnesium</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 650</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="1300" data-reviews="8">
+        <div class="pc-media">
+          <span class="pc-badge b-best">Combo</span>
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/Cool_like_ashwagandha.jpg?v=1742553975&width=500" alt="Focus Relax Pack" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 8 reviews</span></div>
+          <h3 class="pc-name">FOCUS and RELAX</h3>
+          <p class="pc-sub">Pack of 2 &middot; Morning clarity, evening calm</p>
+          <div class="pc-price-row">
+            <span class="pc-price">From Rs. 1,300</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="1400" data-reviews="4">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/COCOSU_1_b5f49af6-faed-4530-b3fc-736b5dbb85fb.jpg?v=1745492195&width=500" alt="Relax Focus Sachets" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 4 reviews</span></div>
+          <h3 class="pc-name">RELAX and FOCUS Sachets</h3>
+          <p class="pc-sub">20 Sachets &middot; Mind wellness duo</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 1,400</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="1400" data-reviews="3">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/COCOSU_2_c7623bfd-325c-4af6-b4aa-f67681a481fb.jpg?v=1745492195&width=500" alt="Soothe Glow Sachets" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 3 reviews</span></div>
+          <h3 class="pc-name">SOOTHE and GLOW Sachets</h3>
+          <p class="pc-sub">20 Sachets &middot; Feminine beauty duo</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 1,400</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+      <article class="pc" data-category="functional" data-price="1400" data-reviews="3">
+        <div class="pc-media">
+          
+          <button class="pc-wish" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </button>
+          <img src="https://cocosutra.com/cdn/shop/files/COCOSU_1_2b4c5cca-89f5-49eb-8a22-0af2c78aee80.jpg?v=1745492195&width=500" alt="Balance Defend Sachets" loading="lazy">
+          <span class="pc-dots"><i class="on"></i><i></i></span>
+        </div>
+        <div class="pc-info">
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 3 reviews</span></div>
+          <h3 class="pc-name">BALANCE and DEFEND Sachets</h3>
+          <p class="pc-sub">20 Sachets &middot; Gut and immunity duo</p>
+          <div class="pc-price-row">
+            <span class="pc-price">Rs. 1,400</span>
+          </div>
+          
+          <button class="pc-add">ADD</button>
+        </div>
+      </article>
+  </div>
+
+  <!-- GUIDE -->
+  <div class="guide">
+    <div class="guide-box">
+      <div class="guide-left">
+        <p class="g-eyebrow">Not Sure Where to Start</p>
+        <h2 class="g-head">Find the Right Cup for You</h2>
+        <p class="g-body">Answer one question and we point you straight to the product that suits your taste, health goals, or lifestyle.</p>
+        <button class="btn-quiz" onclick="document.getElementById('quiz-modal').classList.add('open')">Take the 60-Second Quiz &#8599;</button>
+      </div>
+      <div class="guide-right">
+        <div class="g-card" onclick="document.getElementById('quiz-modal').classList.add('open')"><div class="g-num">01</div><div class="g-title">I am new here</div><div class="g-desc">Take the quick quiz and we will point you to the right starting flavour.</div></div>
+        <div class="g-card" onclick="filterProducts('classic',null)"><div class="g-num">02</div><div class="g-title">I love great chocolate</div><div class="g-desc">Classic flavours for daily indulgence. Rich, gourmet, guilt-free.</div></div>
+        <div class="g-card" onclick="filterProducts('functional',null)"><div class="g-num">03</div><div class="g-title">I want health benefits</div><div class="g-desc">Superfoods in every cup. Ashwagandha, Melatonin, Collagen, and more.</div></div>
+        <div class="g-card"><div class="g-num">04</div><div class="g-title">I am buying a gift</div><div class="g-desc">Curated hampers and corporate gifting options available.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <div class="sp-section">
+    <p class="sp-head">What Our Customers Are Saying</p>
+    <div class="reviews">
+      <div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rev-text">I am diabetic and had given up on hot chocolate. Cocosutra changed that &mdash; genuinely no aftertaste, rich, creamy, zero guilt. A cup every evening now.</p><div class="rev-author">Priya S.</div><div class="rev-product">Swiss Vanilla 200g</div></div>
+      <div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rev-text">The RELAX blend replaced my sleep routine. A cup thirty minutes before bed and I am out quickly. One of my most practical purchases this year.</p><div class="rev-author">Arjun M.</div><div class="rev-product">RELAX &mdash; Sleep Support 200g</div></div>
+      <div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rev-text">Ordered the 6-flavour sampler to test. Swiss Vanilla and Mocha are now staples. Already on my third tin &mdash; my keto journey just got tastier.</p><div class="rev-author">Neha K.</div><div class="rev-product">6-Flavour Sampler, then Mocha</div></div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <div class="faq-head"><h2>Common Questions</h2><p>Everything you should know before you buy</p></div>
+    <div class="faq-grid">
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is this really sugar-free? What sweetener is used?<span class="faq-tog">+</span></div><div class="faq-a">Yes, 100% sugar-free. We use Stevia and Erythritol, both naturally derived zero-calorie sweeteners with a low glycemic index. No aspartame, no sucralose &mdash; a clean, rich taste with no aftertaste.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is it safe for diabetics?<span class="faq-tog">+</span></div><div class="faq-a">Absolutely. With just 2g net carbs and zero sugar per serving, it causes no blood sugar spike. Widely recommended by nutritionists and endocrinologists across India.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the difference between Classic and Functional?<span class="faq-tog">+</span></div><div class="faq-a">Classic flavours are pure gourmet drinking chocolates &mdash; rich, indulgent, versatile. Functional flavours add targeted superfoods such as Melatonin, Ashwagandha, or Prebiotics for specific wellness goals.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I prepare it? Can it be served cold?<span class="faq-tog">+</span></div><div class="faq-a">Mix 2 heaped teaspoons or one sachet with 150 to 200ml of hot milk or water. For iced chocolate, dissolve in a little hot water first, then add cold milk and ice. It works brilliantly both ways.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is it keto-friendly?<span class="faq-tog">+</span></div><div class="faq-a">Yes. With just 2g net carbs per serving, it fits comfortably within a ketogenic diet. No hidden sugars, no maltodextrin, no fillers.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Which product should I start with?<span class="faq-tog">+</span></div><div class="faq-a">We recommend the 6-Flavour Sampler for first-time buyers. If wellness is your priority, start with the Functional Wellness Sampler covering all four functional variants in single-serve sachets.</div></div>
+    </div>
+  </div>
+
+  <!-- FOOTER BAND -->
+  <div class="footer-band">
+    <div class="fb-box">
+      <div><h3>Still not sure which to pick?</h3><p>We are happy to help you find the right flavour for your taste and health goals.</p></div>
+      <div class="fb-btns">
+        <button class="btn-out" onclick="window.open('https://cocosutra.com/blogs/recipes','_blank')">Browse Recipes</button>
+        <button class="btn-fill" onclick="window.open('https://cocosutra.com/pages/gifting','_blank')">Explore Gifting</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- BOTTOM SORT / FILTER DOCK -->
+<div class="dock">
+  <button onclick="document.getElementById('sort-sheet').classList.add('open')"><span class="d-lbl">Sort By</span><span class="d-val" id="sort-val">Featured</span></button>
+  <button onclick="document.getElementById('filter-sheet').classList.add('open')"><span class="d-lbl">Filter</span><span class="d-val" id="filter-val">All &middot; 16</span></button>
+</div>
+
+<!-- SORT SHEET -->
+<div class="ov" id="sort-sheet" onclick="closeOv(event)">
+  <div class="sheet">
+    <button class="sheet-x" onclick="document.getElementById('sort-sheet').classList.remove('open')">&times;</button>
+    <h3>Sort By</h3><p class="sub">Reorder the collection</p>
+    <div class="opt sel" data-v="default" onclick="pickSort(this,'default','Featured')"><span class="mark"></span><span>Featured</span></div>
+    <div class="opt" data-v="reviews" onclick="pickSort(this,'reviews','Top Rated')"><span class="mark"></span><span>Top Rated</span></div>
+    <div class="opt" data-v="price-asc" onclick="pickSort(this,'price-asc','Price: Low to High')"><span class="mark"></span><span>Price: Low to High</span></div>
+    <div class="opt" data-v="price-desc" onclick="pickSort(this,'price-desc','Price: High to Low')"><span class="mark"></span><span>Price: High to Low</span></div>
+  </div>
+</div>
+
+<!-- FILTER SHEET -->
+<div class="ov" id="filter-sheet" onclick="closeOv(event)">
+  <div class="sheet">
+    <button class="sheet-x" onclick="document.getElementById('filter-sheet').classList.remove('open')">&times;</button>
+    <h3>Filter</h3><p class="sub">Show me</p>
+    <div class="opt sel" data-c="all" onclick="pickFilter(this,'all','All')"><span class="mark"></span><span>All Products</span></div>
+    <div class="opt" data-c="classic" onclick="pickFilter(this,'classic','Classic')"><span class="mark"></span><span>Classic Flavours</span></div>
+    <div class="opt" data-c="functional" onclick="pickFilter(this,'functional','Functional')"><span class="mark"></span><span>Functional Wellness</span></div>
+  </div>
+</div>
+
+<!-- QUIZ MODAL -->
+<div class="ov" id="quiz-modal" onclick="closeOv(event)">
+  <div class="sheet">
+    <button class="sheet-x" onclick="document.getElementById('quiz-modal').classList.remove('open')">&times;</button>
+    <h3>Find Your Perfect Cup</h3><p class="sub">One question. We guide you to the right product.</p>
+    <div class="opt q-opt" onclick="selectGoal('newbie',this)"><span class="mark"></span><div class="q-txt"><strong>I am new and want to try before buying</strong><span>Start with a sampler &mdash; explore flavours, no commitment</span></div></div>
+    <div class="opt q-opt" onclick="selectGoal('diabetic',this)"><span class="mark"></span><div class="q-txt"><strong>I am diabetic or following keto</strong><span>Zero-sugar indulgence that fits your lifestyle</span></div></div>
+    <div class="opt q-opt" onclick="selectGoal('sleep',this)"><span class="mark"></span><div class="q-txt"><strong>I struggle with sleep or want to unwind</strong><span>RELAX blend with Melatonin and Chamomile</span></div></div>
+    <div class="opt q-opt" onclick="selectGoal('focus',this)"><span class="mark"></span><div class="q-txt"><strong>I want better focus and clarity</strong><span>FOCUS blend with Ashwagandha and Brahmi</span></div></div>
+    <div class="opt q-opt" onclick="selectGoal('skin',this)"><span class="mark"></span><div class="q-txt"><strong>I want better skin or feminine wellness</strong><span>GLOW for skin or SOOTHE for hormonal balance</span></div></div>
+    <div class="quiz-res" id="quiz-res"><h4 id="qr-title">Our Recommendation</h4><p id="qr-text"></p><a id="qr-link" href="#" class="btn-res">Shop Now</a></div>
+  </div>
+</div>
+
+<script>
+const recs={
+  newbie:{title:"Start with the 6-Flavour Sampler",text:"Try all six classic flavours in one hamper before committing to a full tin.",link:"https://cocosutra.com/products/sugar-free-drinking-chocolate-single-serves-hamper"},
+  diabetic:{title:"Swiss Vanilla or Mocha 200g Tin",text:"Bestselling tins for diabetic and keto use. 2g net carbs, zero sugar, rich gourmet taste.",link:"https://cocosutra.com/products/sugar-free-drinking-chocolate-mix-swiss-vanilla-200g"},
+  sleep:{title:"RELAX — Sleep Support",text:"Melatonin and Chamomile for your bedtime ritual. Our most-loved functional blend.",link:"https://cocosutra.com/products/relax-sleep-support-sugar-free-drinking-chocolate-mix-200g"},
+  focus:{title:"FOCUS — Mental Alertness",text:"Powered by Ashwagandha and Brahmi. Replace your afternoon coffee with real clarity.",link:"https://cocosutra.com/products/focus-ashwagandha-based-sugar-free-drinking-chocolate-mix-200g"},
+  skin:{title:"GLOW and SOOTHE",text:"GLOW supports skin with Collagen and Biotin. SOOTHE addresses PMS with Shatavari and Magnesium.",link:"https://cocosutra.com/products/glow-sugar-free-drinking-chocolate-mix-200g"}
+};
+function selectGoal(k,el){
+  document.querySelectorAll('#quiz-modal .q-opt').forEach(o=>o.classList.remove('sel'));
+  el.classList.add('sel');
+  const r=recs[k];
+  document.getElementById('qr-title').textContent=r.title;
+  document.getElementById('qr-text').textContent=r.text;
+  document.getElementById('qr-link').href=r.link;
+  const res=document.getElementById('quiz-res');res.classList.add('show');
+  setTimeout(()=>res.scrollIntoView({behavior:'smooth',block:'nearest'}),60);
+}
+function closeOv(e){if(e.target===e.currentTarget)e.currentTarget.classList.remove('open')}
+function syncTabs(cat){document.querySelectorAll('.f-tab').forEach(t=>t.classList.remove('active'));const map={all:0,classic:1,functional:2};const tabs=document.querySelectorAll('.f-tab');if(map[cat]!=null)tabs[map[cat]].classList.add('active')}
+function filterProducts(cat,btn){
+  if(btn){document.querySelectorAll('.f-tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active')} else {syncTabs(cat)}
+  let n=0;
+  document.querySelectorAll('.pc').forEach(c=>{const show=cat==='all'||c.dataset.category.includes(cat);c.style.display=show?'':'none';if(show)n++;});
+  const labelMap={all:'All',sampler:'Samplers',classic:'Classic',functional:'Functional'};
+  document.getElementById('filter-val').innerHTML=labelMap[cat]+' &middot; '+n;
+  window.__cat=cat;
+}
+function pickFilter(el,cat,label){
+  document.querySelectorAll('#filter-sheet .opt').forEach(o=>o.classList.remove('sel'));el.classList.add('sel');
+  filterProducts(cat,null);
+  document.getElementById('filter-sheet').classList.remove('open');
+}
+function sortProducts(val){
+  const g=document.getElementById('product-grid');
+  const cards=[...g.querySelectorAll('.pc')];
+  cards.sort((a,b)=>{
+    if(val==='reviews')return +b.dataset.reviews-+a.dataset.reviews;
+    if(val==='price-asc')return +a.dataset.price-+b.dataset.price;
+    if(val==='price-desc')return +b.dataset.price-+a.dataset.price;
+    return 0;
+  });
+  if(val==='default'){location.reload();return}
+  cards.forEach(c=>g.appendChild(c));
+}
+function pickSort(el,val,label){
+  document.querySelectorAll('#sort-sheet .opt').forEach(o=>o.classList.remove('sel'));el.classList.add('sel');
+  document.getElementById('sort-val').textContent=label;
+  sortProducts(val);
+  document.getElementById('sort-sheet').classList.remove('open');
+}
+function toggleFaq(el){
+  const open=el.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(q=>{q.classList.remove('open');q.nextElementSibling.classList.remove('open')});
+  if(!open){el.classList.add('open');el.nextElementSibling.classList.add('open')}
+}
+document.querySelectorAll('.pc-wish').forEach(b=>b.addEventListener('click',()=>b.classList.toggle('on')));
+document.querySelectorAll('.pc-add').forEach(b=>b.addEventListener('click',()=>{
+  b.classList.add('added');
+  b.textContent='ADDED';
+  const n=document.querySelector('.nav-cartn');
+  n.textContent=String(Math.max(1,+n.textContent+1||1));
+  setTimeout(()=>{b.classList.remove('added');b.textContent='ADD'},1200);
+}));
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.querySelectorAll('video').forEach(v=>v.pause());
+}
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('in')});
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+const movingLayers=document.querySelectorAll('[data-speed]');
+let ticking=false;
+function moveLayers(){
+  const y=window.scrollY;
+  movingLayers.forEach(el=>{
+    if(window.innerWidth<760 && el.closest('.ritual')){
+      el.style.transform='none';
+      return;
+    }
+    const rect=el.getBoundingClientRect();
+    const speed=parseFloat(el.dataset.speed||0);
+    const offset=(y+rect.top-window.innerHeight*.55)*speed;
+    el.style.transform=`translate3d(0,${offset}px,0)`;
+  });
+  const dock=document.querySelector('.dock');
+  const products=document.getElementById('products');
+  if(dock&&products){
+    dock.classList.toggle('show',products.getBoundingClientRect().top < window.innerHeight*.72);
+  }
+  ticking=false;
+}
+window.addEventListener('scroll',()=>{
+  if(!ticking){requestAnimationFrame(moveLayers);ticking=true}
+},{passive:true});
+moveLayers();
+</script>
+</body>
+</html>
