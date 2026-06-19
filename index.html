@@ -42,8 +42,8 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .hero::after{display:none}
 .hero-bg,.hero-video,.hero-mist,.hero-product,.hero-cup,.hero-beans{position:absolute;pointer-events:none;will-change:transform}
 .hero-bg{inset:-10% -7%;background:linear-gradient(115deg,rgba(26,26,26,.94),rgba(32,32,32,.82) 48%,rgba(223,89,36,.22)),url('https://cocosutra.com/cdn/shop/files/CocosutraSugarFreeDrinkingChocolateSingleServeHamper_12Sachets_-Lifestyle.jpg?v=1758940881&width=1800') center/cover;z-index:-5;filter:saturate(.92);transform-origin:62% 42%}
-.hero-video{inset:0;width:100%;height:100%;object-fit:cover;object-position:center 44%;z-index:-4;filter:saturate(1.02) contrast(1.02)}
-.hero-mist{inset:0;z-index:-3;background:linear-gradient(105deg,rgba(26,26,26,.78) 0%,rgba(26,26,26,.52) 54%,rgba(26,26,26,.16) 100%),radial-gradient(circle at 74% 22%,rgba(223,89,36,.14),transparent 25%),linear-gradient(0deg,rgba(26,26,26,.32),transparent 48%)}
+.hero-video{top:-78px;left:0;width:100%;height:calc(100% + 176px);object-fit:cover;object-position:center 36%;z-index:-4;filter:saturate(1.04) contrast(1.03)}
+.hero-mist{inset:0;z-index:-3;background:linear-gradient(100deg,rgba(18,18,18,.82) 0%,rgba(18,18,18,.48) 42%,rgba(18,18,18,.08) 76%,rgba(18,18,18,0) 100%),radial-gradient(circle at 18% 34%,rgba(0,0,0,.34),transparent 34%)}
 .hero-product{display:none;right:2vw;bottom:7vh;width:min(38vw,500px);max-height:58vh;object-fit:cover;border-radius:8px;box-shadow:0 38px 90px rgba(0,0,0,.38);z-index:-1;rotate:-3deg}
 .hero-cup{display:none;right:31vw;bottom:9vh;width:min(17vw,210px);border-radius:8px;box-shadow:var(--shadow);opacity:.94;background:#F4F4F1}
 .hero-beans{display:none;left:-70px;bottom:2vh;width:min(28vw,320px);height:min(28vw,320px);border-radius:50%;background:radial-gradient(circle at 38% 38%,rgba(255,255,255,.18),transparent 18%),radial-gradient(circle at 70% 50%,rgba(223,89,36,.32),transparent 8%),rgba(26,26,26,.62);filter:blur(.2px);opacity:.45}
@@ -65,7 +65,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .scroll-cue{display:none}
 .scroll-cue::before{content:'';width:34px;height:1px;background:rgba(255,255,255,.35)}
 
-.marquee{position:relative;z-index:6;background:var(--cocoa-2);overflow:hidden;padding:12px 0;border-top:1px solid rgba(255,255,255,.05);margin-top:-46px}
+.marquee{position:relative;z-index:6;background:var(--cocoa-2);overflow:hidden;padding:12px 0;border-top:1px solid rgba(255,255,255,.05);margin-top:-88px}
 .marquee-track{display:flex;width:max-content;animation:scroll 30s linear infinite}
 .m-item{display:flex;align-items:center;gap:8px;padding:0 26px;font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-2);white-space:nowrap}
 .m-dot{width:4px;height:4px;border-radius:50%;background:var(--gold)}
@@ -354,7 +354,9 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .hm b{font-size:22px}
   .hm span{font-size:7px;letter-spacing:.05em}
   .scroll-cue{display:none}
-  .marquee{padding:10px 0;margin-top:-18px}
+  .hero-video{top:-56px;height:calc(100% + 126px);object-position:center 34%}
+  .hero-mist{background:linear-gradient(100deg,rgba(18,18,18,.78) 0%,rgba(18,18,18,.42) 56%,rgba(18,18,18,.06) 100%),radial-gradient(circle at 20% 32%,rgba(0,0,0,.3),transparent 34%)}
+  .marquee{padding:10px 0;margin-top:-78px}
   .m-item{font-size:9.5px;padding:0 18px}
   .story{padding:30px 14px 22px}
   .story::before{font-size:118px;right:-32px;top:4px}
@@ -439,8 +441,8 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 }
 @media(min-width:760px) and (max-width:1024px){
   .hero{min-height:680px}
-  .hero-video{object-position:56% 42%}
-  .hero-mist{background:linear-gradient(105deg,rgba(26,26,26,.74) 0%,rgba(26,26,26,.48) 58%,rgba(26,26,26,.16) 100%),linear-gradient(0deg,rgba(26,26,26,.28),transparent 48%)}
+  .hero-video{top:-72px;height:calc(100% + 166px);object-position:54% 34%}
+  .hero-mist{background:linear-gradient(100deg,rgba(18,18,18,.8) 0%,rgba(18,18,18,.46) 48%,rgba(18,18,18,.08) 84%,rgba(18,18,18,0) 100%),radial-gradient(circle at 20% 34%,rgba(0,0,0,.32),transparent 34%)}
   .hero-inner{min-height:680px;padding:58px 44px 30px;align-items:center}
   .hero-copy{max-width:520px}
   .hero-eye{font-size:9.5px;margin-bottom:13px}
