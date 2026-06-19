@@ -272,12 +272,25 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .btn-out{border:1.4px solid var(--cocoa);background:transparent;color:var(--cocoa)}
 .btn-fill{border:none;background:var(--gold);color:var(--white)}
 
-.dock{position:fixed;bottom:0;left:0;right:0;z-index:250;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr 1fr;box-shadow:0 -4px 20px rgba(26,26,26,.07);transform:translateY(120%);opacity:0;pointer-events:none;transition:transform .28s ease,opacity .28s ease}
-.dock.show{transform:translateY(0);opacity:1;pointer-events:auto}
-.dock button{background:none;border:none;padding:11px 10px;font-family:'Poppins';display:flex;flex-direction:column;align-items:center;gap:1px}
-.dock button:first-child{border-right:1px solid var(--rule)}
-.dock .d-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cocoa)}
-.dock .d-val{font-size:11px;color:var(--ink-3);font-weight:300}
+.dock{position:fixed;left:18px;top:50%;z-index:260;width:184px;overflow:hidden;border:1px solid rgba(255,255,255,.18);border-radius:8px;background:linear-gradient(145deg,rgba(44,25,19,.82),rgba(26,26,26,.78) 58%,rgba(223,89,36,.2));color:var(--cream);box-shadow:0 24px 70px rgba(26,26,26,.22),inset 0 1px 0 rgba(255,255,255,.16);backdrop-filter:blur(18px) saturate(1.3);transform:translate(-128%, -50%);opacity:0;pointer-events:none;transition:transform .36s cubic-bezier(.22,1,.36,1),opacity .24s ease}
+.dock.show{transform:translate(0, -50%);opacity:1;pointer-events:auto}
+.dock::before{content:'';position:absolute;inset:-50% -30%;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.22),transparent 16%),linear-gradient(120deg,transparent 30%,rgba(255,255,255,.16),transparent 56%);animation:chocoGlass 6s ease-in-out infinite;pointer-events:none}
+.dock::after{content:'';position:absolute;left:14px;right:14px;bottom:0;height:3px;border-radius:999px 999px 0 0;background:linear-gradient(90deg,var(--gold),#fff2e8,var(--gold));opacity:.78}
+.dock-inner{position:relative;z-index:1;padding:13px}
+.dock-kicker{display:flex;align-items:center;gap:7px;font-size:8px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.68);margin-bottom:5px}
+.dock-kicker::before{content:'';width:22px;height:1px;background:var(--gold)}
+.dock-title{font-family:'Fraunces',serif;font-size:19px;font-weight:600;line-height:1.02;color:var(--cream);margin-bottom:5px}
+.dock-title em{font-style:italic;color:#ff7a3f}
+.dock-copy{font-size:9.2px;line-height:1.42;color:rgba(255,255,255,.7);margin-bottom:10px}
+.dock-actions{display:grid;gap:6px}
+.dock button,.dock a{border:none;border-radius:999px;min-height:34px;padding:9px 12px;font-family:'Poppins';font-size:9px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;justify-content:center}
+.dock-buy{background:var(--gold);color:var(--white);box-shadow:0 12px 26px rgba(223,89,36,.26)}
+.dock-quiz{background:rgba(255,255,255,.1);color:var(--cream);border:1px solid rgba(255,255,255,.18)!important}
+.dock-note{display:block;margin-top:8px;font-size:8.2px;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.48)}
+@keyframes chocoGlass{
+  0%,100%{transform:translateX(-8%) rotate(-4deg);opacity:.55}
+  50%{transform:translateX(9%) rotate(4deg);opacity:.95}
+}
 
 /* BOTTOM SHEETS / MODALS */
 .ov{display:none;position:fixed;inset:0;background:rgba(26,26,26,.6);z-index:500;align-items:flex-end;justify-content:center}
@@ -332,7 +345,6 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .fb-box{display:flex;align-items:center;justify-content:space-between;text-align:left;padding:34px 40px}
   .fb-box p{margin-bottom:0}
   .fb-btns{flex-direction:row;flex-shrink:0}
-  .dock{max-width:340px;right:24px;left:auto;bottom:24px;border-radius:50px;border:1px solid var(--rule);overflow:hidden}
   body{padding-bottom:0}
 }
 @media(max-width:759px){
@@ -445,9 +457,14 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .rev-card{padding:18px}
   .faq-section{padding:0 10px}
   .fb-box{padding:24px 18px}
-  .dock button{padding:10px}
-  .dock .d-lbl{font-size:10px}
-  .dock .d-val{font-size:10px}
+  .dock{left:10px;right:10px;top:auto;bottom:10px;width:auto;border-radius:10px;transform:translateY(130%);background:linear-gradient(135deg,rgba(38,24,20,.9),rgba(26,26,26,.86))}
+  .dock.show{transform:translateY(0)}
+  .dock-inner{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;padding:10px 11px}
+  .dock-title{font-size:17px;margin-bottom:0}
+  .dock-copy,.dock-note{display:none}
+  .dock-kicker{font-size:7.5px;margin-bottom:3px}
+  .dock-actions{grid-template-columns:auto auto;gap:6px}
+  .dock button,.dock a{min-height:32px;padding:8px 10px;font-size:8px}
 }
 @media(min-width:760px) and (max-width:1024px){
   .hero{min-height:680px}
@@ -1016,10 +1033,20 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 </div>
 </main>
 
-<!-- BOTTOM SORT / FILTER DOCK -->
-<div class="dock">
-  <button onclick="document.getElementById('sort-sheet').classList.add('open')"><span class="d-lbl">Sort By</span><span class="d-val" id="sort-val">Featured</span></button>
-  <button onclick="document.getElementById('filter-sheet').classList.add('open')"><span class="d-lbl">Filter</span><span class="d-val" id="filter-val">All &middot; 16</span></button>
+<!-- STICKY GLASS BUY CTA -->
+<div class="dock" aria-label="Sticky buy now offer">
+  <div class="dock-inner">
+    <div>
+      <div class="dock-kicker">Zero Sugar</div>
+      <div class="dock-title">Sip <em>without</em> the spike.</div>
+      <p class="dock-copy">Start with the bestselling 200g tin. 0g added sugar, 2g net carbs.</p>
+      <span class="dock-note">First order: FIRST10</span>
+    </div>
+    <div class="dock-actions">
+      <button class="dock-buy" type="button" onclick="buyNowSticky()">Buy Now</button>
+      <a class="dock-quiz" href="#guide">Find Cup</a>
+    </div>
+  </div>
 </div>
 
 <!-- SORT SHEET -->
@@ -1084,7 +1111,8 @@ function filterProducts(cat,btn){
   let n=0;
   document.querySelectorAll('.pc').forEach(c=>{const show=cat==='all'||c.dataset.category.includes(cat);c.style.display=show?'':'none';if(show)n++;});
   const labelMap={all:'All',sampler:'Samplers',classic:'Classic',functional:'Functional'};
-  document.getElementById('filter-val').innerHTML=labelMap[cat]+' &middot; '+n;
+  const filterVal=document.getElementById('filter-val');
+  if(filterVal)filterVal.innerHTML=labelMap[cat]+' &middot; '+n;
   window.__cat=cat;
 }
 function pickFilter(el,cat,label){
@@ -1106,7 +1134,8 @@ function sortProducts(val){
 }
 function pickSort(el,val,label){
   document.querySelectorAll('#sort-sheet .opt').forEach(o=>o.classList.remove('sel'));el.classList.add('sel');
-  document.getElementById('sort-val').textContent=label;
+  const sortVal=document.getElementById('sort-val');
+  if(sortVal)sortVal.textContent=label;
   sortProducts(val);
   document.getElementById('sort-sheet').classList.remove('open');
 }
@@ -1219,6 +1248,19 @@ document.querySelectorAll('.pc-add').forEach(b=>b.addEventListener('click',e=>{
   n.textContent=String(Math.max(1,+n.textContent+1||1));
   setTimeout(()=>{b.classList.remove('added');b.textContent='ADD'},1200);
 }));
+function buyNowSticky(){
+  const products=document.getElementById('products');
+  const firstCard=document.querySelector('.pc');
+  if(products)products.scrollIntoView({behavior:'smooth',block:'start'});
+  if(firstCard){
+    setProductOpen(firstCard,true);
+    firstCard.classList.add('pc-in','peek');
+    setTimeout(()=>{
+      const add=firstCard.querySelector('.pc-add');
+      if(add)add.click();
+    },520);
+  }
+}
 const productObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     const card=entry.target;
@@ -1254,9 +1296,11 @@ function moveLayers(){
     el.style.transform=`translate3d(0,${offset}px,0)`;
   });
   const dock=document.querySelector('.dock');
-  const products=document.getElementById('products');
-  if(dock&&products){
-    dock.classList.toggle('show',products.getBoundingClientRect().top < window.innerHeight*.72);
+  const hero=document.querySelector('.hero');
+  if(dock){
+    const heroBottom=hero?hero.getBoundingClientRect().bottom:0;
+    const show=window.scrollY>80 && heroBottom < window.innerHeight*.78;
+    dock.classList.toggle('show',show);
   }
   ticking=false;
 }
