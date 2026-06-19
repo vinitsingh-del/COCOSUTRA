@@ -76,60 +76,60 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   100%{scale:1.11;translate:1.5% -1%;background-position:61% 46%}
 }
 
-.story{position:relative;background:var(--white);padding:70px 18px 54px;overflow:hidden}
-.story::before{content:'JOY';position:absolute;right:-2vw;top:12px;font-family:'Fraunces',serif;font-size:min(20vw,250px);font-style:italic;color:rgba(223,89,36,.08);line-height:1}
-.story-inner{max-width:1220px;margin:0 auto;display:grid;gap:30px}
+.story{position:relative;background:var(--white);padding:46px 18px 36px;overflow:hidden}
+.story::before{content:'JOY';position:absolute;right:-2vw;top:12px;font-family:'Fraunces',serif;font-size:min(16vw,190px);font-style:italic;color:rgba(223,89,36,.06);line-height:1}
+.story-inner{max-width:1220px;margin:0 auto;display:grid;gap:18px 28px}
 .story-copy{position:relative;z-index:2}
 .kicker{font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.story h2,.coll-head h2,.ritual-copy h2,.faq-head h2{font-family:'Fraunces',serif;font-size:clamp(32px,6vw,70px);font-weight:550;line-height:1;color:var(--cocoa)}
+.story h2,.coll-head h2,.ritual-copy h2,.faq-head h2{font-family:'Fraunces',serif;font-size:clamp(30px,4.6vw,52px);font-weight:550;line-height:1;color:var(--cocoa)}
 .story h2 em,.ritual-copy h2 em{font-style:italic;color:var(--berry)}
-.story p{font-size:14px;color:var(--ink-2);max-width:620px;line-height:1.85;margin-top:16px}
-.proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:560px}
-.proof{position:relative;overflow:hidden;background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px;box-shadow:0 10px 30px rgba(26,26,26,.05)}
+.story p{font-size:13px;color:var(--ink-2);max-width:520px;line-height:1.65;margin-top:12px}
+.proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-width:none}
+.proof{position:relative;overflow:hidden;background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:12px 13px;box-shadow:0 10px 24px rgba(26,26,26,.04)}
 .proof::after,.r-card::after{content:'';position:absolute;inset:-40% auto -40% -75%;width:48%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-18deg);animation:shineSweep 7.5s ease-in-out infinite;pointer-events:none}
 .proof:nth-child(2)::after{animation-delay:.8s}
 .proof:nth-child(3)::after{animation-delay:1.6s}
 .proof:nth-child(4)::after{animation-delay:2.4s}
-.proof strong{display:block;font-family:'Fraunces',serif;font-size:26px;color:var(--cocoa);line-height:1}
-.proof span{display:block;color:var(--ink-3);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
-.story-visual{min-height:420px;position:relative}
-.orbit{position:sticky;top:92px;min-height:420px;border:1px solid var(--rule);border-radius:8px;background:linear-gradient(135deg,#fff 0%,#F7F7F4 58%,rgba(223,89,36,.08) 100%);overflow:hidden;box-shadow:0 30px 80px rgba(26,26,26,.08)}
+.proof strong{display:block;font-family:'Fraunces',serif;font-size:24px;color:var(--cocoa);line-height:1}
+.proof span{display:block;color:var(--ink-3);font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;margin-top:5px}
+.story-visual{min-height:310px;position:relative}
+.orbit{position:sticky;top:92px;min-height:310px;border:1px solid var(--rule);border-radius:8px;background:linear-gradient(135deg,#fff 0%,#F7F7F4 58%,rgba(223,89,36,.08) 100%);overflow:hidden;box-shadow:0 22px 56px rgba(26,26,26,.07)}
 .orbit::before{content:'';position:absolute;inset:18px;border:1px solid rgba(26,26,26,.08);border-radius:6px}
 .orbit::after{content:'ZERO SUGAR';position:absolute;left:24px;bottom:20px;font-size:11px;font-weight:800;letter-spacing:.2em;color:rgba(26,26,26,.2)}
 .orb-img{position:absolute;border-radius:8px;box-shadow:var(--shadow);overflow:hidden;background:var(--tile)}
 .orb-img img{width:100%;height:100%;object-fit:cover}
-.orb-main{right:6%;top:46px;width:58%;aspect-ratio:1/1}
-.orb-mini{left:6%;top:28px;width:34%;aspect-ratio:4/5;rotate:-6deg}
-.orb-sachet{left:16%;bottom:38px;width:34%;aspect-ratio:1/1;rotate:5deg}
-.ingredient-pill{position:absolute;right:24px;bottom:34px;background:var(--cocoa);color:var(--cream);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:18px;max-width:245px;box-shadow:var(--shadow)}
-.ingredient-pill b{display:block;font-family:'Fraunces',serif;font-size:24px;font-weight:550}
-.ingredient-pill span{display:block;color:rgba(255,255,255,.68);font-size:12px;margin-top:6px}
+.orb-main{right:6%;top:34px;width:56%;aspect-ratio:1/1}
+.orb-mini{left:6%;top:20px;width:32%;aspect-ratio:4/5;rotate:-6deg}
+.orb-sachet{left:16%;bottom:26px;width:32%;aspect-ratio:1/1;rotate:5deg}
+.ingredient-pill{position:absolute;right:20px;bottom:24px;background:var(--cocoa);color:var(--cream);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:14px;max-width:220px;box-shadow:var(--shadow)}
+.ingredient-pill b{display:block;font-family:'Fraunces',serif;font-size:20px;font-weight:550}
+.ingredient-pill span{display:block;color:rgba(255,255,255,.68);font-size:11px;margin-top:5px}
 
-.ritual{grid-area:ritual;margin-top:18px;padding:82px 34px 84px;background:var(--cocoa);color:var(--cream);position:relative;overflow:hidden;border-radius:10px;box-shadow:0 30px 90px rgba(26,26,26,.16)}
-.ritual::before{content:'JOY';position:absolute;right:-42px;top:8px;font-family:'Fraunces',serif;font-size:min(22vw,230px);font-style:italic;color:rgba(223,89,36,.12);line-height:1}
+.ritual{grid-area:ritual;margin-top:0;padding:24px;background:var(--cocoa);color:var(--cream);position:relative;overflow:hidden;border-radius:8px;box-shadow:0 24px 70px rgba(26,26,26,.12)}
+.ritual::before{content:'JOY';position:absolute;right:-28px;top:6px;font-family:'Fraunces',serif;font-size:min(15vw,150px);font-style:italic;color:rgba(223,89,36,.1);line-height:1}
 .ritual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.06),transparent 80px),radial-gradient(circle at 18% 32%,rgba(223,89,36,.16),transparent 26%),radial-gradient(circle at 82% 66%,rgba(255,255,255,.08),transparent 28%)}
-.ritual-inner{position:relative;z-index:1;max-width:1220px;margin:0 auto;display:grid;gap:34px;align-items:center}
+.ritual-inner{position:relative;z-index:1;max-width:1220px;margin:0 auto;display:grid;gap:20px;align-items:center}
 .ritual-copy h2{color:var(--cream)}
 .ritual-copy h2 em{color:var(--gold-pale)}
-.ritual-copy p{font-size:14px;color:rgba(255,255,255,.68);line-height:1.7;margin-top:14px;max-width:500px}
-.review-metric{display:flex;align-items:baseline;gap:12px;margin-top:24px}
-.review-metric strong{position:relative;display:inline-block;font-family:'Fraunces',serif;font-size:52px;line-height:1;color:var(--gold);animation:ratingPulse 3.2s ease-in-out infinite}
-.review-metric span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.58)}
-.ritual-reviews{position:relative;min-height:480px}
-.review-orbit{position:sticky;top:92px;min-height:480px}
-.r-card{position:absolute;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:18px;box-shadow:0 26px 70px rgba(0,0,0,.22);backdrop-filter:blur(14px);max-width:330px;animation:cardGlow 7.5s ease-in-out infinite}
-.r-card.main{left:3%;top:28px;width:54%;background:var(--white);color:var(--ink)}
-.r-card.side{right:0;top:82px;width:42%}
-.r-card.low{left:22%;top:300px;width:50%}
+.ritual-copy p{display:none}
+.review-metric{display:flex;align-items:baseline;gap:10px;margin-top:16px}
+.review-metric strong{position:relative;display:inline-block;font-family:'Fraunces',serif;font-size:42px;line-height:1;color:var(--gold);animation:ratingPulse 3.2s ease-in-out infinite}
+.review-metric span{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.58)}
+.ritual-reviews{position:relative;min-height:220px}
+.review-orbit{position:relative;top:auto;min-height:220px}
+.r-card{position:absolute;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:14px;box-shadow:0 20px 52px rgba(0,0,0,.18);backdrop-filter:blur(14px);max-width:330px;animation:cardGlow 7.5s ease-in-out infinite}
+.r-card.main{left:0;top:10px;width:52%;background:var(--white);color:var(--ink)}
+.r-card.side{right:0;top:52px;width:42%}
+.r-card.low{display:none}
 .r-card.side,.r-card.side::after{animation-delay:1.4s}
 .r-card.low,.r-card.low::after{animation-delay:2.8s}
-.r-stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:12px}
-.r-card p{font-family:'Fraunces',serif;font-size:20px;font-style:italic;line-height:1.35;margin-bottom:14px}
-.r-card.side p,.r-card.low p{font-size:16px;color:var(--cream)}
+.r-stars{color:var(--gold);font-size:11px;letter-spacing:2px;margin-bottom:9px}
+.r-card p{font-family:'Fraunces',serif;font-size:17px;font-style:italic;line-height:1.3;margin-bottom:10px}
+.r-card.side p,.r-card.low p{font-size:14px;color:var(--cream)}
 .r-card b{display:block;font-size:12px;color:inherit}
 .r-card span{display:block;font-size:10.5px;color:rgba(255,255,255,.55);margin-top:2px}
 .r-card.main span{color:var(--ink-3)}
-.review-tag{position:absolute;right:7%;top:252px;background:var(--gold);color:var(--white);border-radius:999px;padding:11px 16px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.review-tag{position:absolute;left:0;bottom:2px;background:var(--gold);color:var(--white);border-radius:999px;padding:9px 13px;font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 18px 40px rgba(0,0,0,.22)}
 @keyframes shineSweep{
   0%,34%{left:-75%;opacity:0}
   43%{opacity:.8}
@@ -275,11 +275,11 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .nav-links a{text-decoration:none;color:var(--ink);font-size:13px;opacity:.62}
   .nav-links a.active,.nav-links a:hover{opacity:1;color:var(--gold)}
   .hero-inner{padding:80px 28px 42px;min-height:calc(100svh - 99px)}
-  .story-inner{grid-template-columns:1fr 1fr;grid-template-areas:"copy visual" "proof visual" "ritual ritual";align-items:start}
+  .story-inner{grid-template-columns:.92fr 1.08fr;grid-template-areas:"copy visual" "proof ritual";align-items:start}
   .story-copy{grid-area:copy}
   .story-visual{grid-area:visual}
-  .story-proof{grid-area:proof;margin-top:-10px}
-  .ritual-inner{grid-template-columns:.85fr 1.15fr}
+  .story-proof{grid-area:proof;margin-top:0}
+  .ritual-inner{grid-template-columns:.55fr 1.45fr}
   #product-grid{grid-template-columns:repeat(4,1fr);gap:30px 18px}
   .pc-name{font-size:15px}
   .reviews{grid-template-columns:repeat(3,1fr)}
@@ -321,39 +321,41 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .scroll-cue{display:none}
   .marquee{padding:10px 0}
   .m-item{font-size:9.5px;padding:0 18px}
-  .story{padding:44px 14px 34px}
+  .story{padding:30px 14px 22px}
   .story::before{font-size:118px;right:-32px;top:4px}
   .story-inner{display:block}
   .story-copy,.story-visual,.story-proof,.ritual{grid-area:auto}
-  .story-visual,.story-proof,.ritual{margin-top:18px}
+  .story-visual,.story-proof,.ritual{margin-top:14px}
   .kicker{font-size:9.5px;letter-spacing:.14em}
-  .story h2,.coll-head h2,.ritual-copy h2,.faq-head h2{font-size:clamp(32px,11vw,45px);line-height:1.02}
-  .story p{font-size:13px;line-height:1.68;margin-top:12px}
+  .story h2,.coll-head h2,.ritual-copy h2,.faq-head h2{font-size:clamp(29px,9.5vw,38px);line-height:1.02}
+  .story p{font-size:12.5px;line-height:1.58;margin-top:10px}
   .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none;gap:8px}
-  .proof{padding:14px 12px;min-height:92px}
-  .proof strong{font-size:28px}
+  .proof{padding:12px;min-height:78px}
+  .proof strong{font-size:24px}
   .proof span{font-size:9px;letter-spacing:.09em;line-height:1.35}
-  .story-visual{min-height:310px}
-  .orbit{position:relative;top:auto;min-height:310px}
+  .story-visual{min-height:230px}
+  .orbit{position:relative;top:auto;min-height:230px}
   .orbit::before{inset:10px}
   .orbit::after{left:14px;bottom:12px;font-size:9px}
-  .orb-main{width:66%;right:-2%;top:44px}
+  .orb-main{width:64%;right:-2%;top:34px}
   .orb-mini{width:38%;left:5%;top:18px}
-  .orb-sachet{width:42%;left:8%;bottom:42px}
-  .ingredient-pill{right:8px;bottom:12px;max-width:168px;padding:12px}
-  .ingredient-pill b{font-size:18px}
-  .ingredient-pill span{font-size:10.5px;line-height:1.45}
-  .ritual{padding:32px 14px 30px;margin-top:18px;border-radius:9px}
-  .ritual::before{font-size:110px;right:-28px;top:8px}
-  .ritual-inner{gap:18px}
-  .ritual-copy p{font-size:12.5px;line-height:1.6;max-width:300px}
-  .review-metric{margin-top:18px;gap:9px}
-  .review-metric strong{font-size:42px}
-  .review-metric span{font-size:9px;letter-spacing:.1em;max-width:170px}
+  .orb-sachet{width:40%;left:8%;bottom:30px}
+  .ingredient-pill{right:8px;bottom:12px;max-width:148px;padding:11px}
+  .ingredient-pill b{font-size:17px}
+  .ingredient-pill span{display:none}
+  .ritual{padding:20px 14px 18px;margin-top:14px;border-radius:9px}
+  .ritual::before{font-size:96px;right:-28px;top:8px}
+  .ritual-inner{gap:14px}
+  .ritual-copy h2{font-size:32px}
+  .review-metric{margin-top:12px;gap:8px}
+  .review-metric strong{font-size:34px}
+  .review-metric span{font-size:8.5px;letter-spacing:.09em;max-width:145px}
   .ritual-reviews{min-height:0}
   .review-orbit{position:relative;top:auto;min-height:0;display:flex;flex-direction:column;gap:10px}
   .r-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:100%!important;padding:14px;max-width:none}
-  .r-card p{font-size:17px;line-height:1.32;margin-bottom:10px}
+  .r-card.side{display:none}
+  .r-card.low{display:none}
+  .r-card p{font-size:14px;line-height:1.32;margin-bottom:10px}
   .r-card.side p,.r-card.low p{font-size:14px}
   .review-tag{position:relative;right:auto;top:auto;align-self:flex-start;margin:2px 0 0;padding:9px 12px;font-size:9px;letter-spacing:.08em}
   .coll-shell{padding-top:38px}
@@ -406,6 +408,28 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .hm b{font-size:42px}
   .hm span{font-size:10px}
   .scroll-cue{display:none}
+  .story{padding:38px 18px 28px}
+  .story-inner{grid-template-columns:1fr 1fr;gap:18px;grid-template-areas:"copy visual" "proof ritual"}
+  .story h2{font-size:clamp(36px,5.6vw,48px)}
+  .story p{font-size:12.5px;line-height:1.58}
+  .story-visual,.orbit{min-height:310px}
+  .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .proof{min-height:78px;padding:12px}
+  .proof span{font-size:9px;line-height:1.28}
+  .ritual{padding:22px 18px}
+  .ritual-inner{grid-template-columns:1fr;gap:12px}
+  .ritual-copy h2{font-size:34px}
+  .review-metric{margin-top:12px}
+  .review-metric strong{font-size:38px}
+  .review-metric span{font-size:9px;max-width:180px}
+  .ritual-reviews,.review-orbit{min-height:0}
+  .review-orbit{display:flex;flex-direction:column;gap:10px}
+  .r-card{padding:12px}
+  .r-card.main{position:relative;left:auto;top:auto;width:100%}
+  .r-card.side{display:none}
+  .r-card p{font-size:15px}
+  .r-card.side p{font-size:12.5px}
+  .review-tag{position:relative;left:auto;bottom:auto;align-self:flex-start;font-size:8.5px;padding:8px 11px}
 }
 @media(prefers-reduced-motion:reduce){
   .hero-bg,.marquee-track,.proof::after,.r-card,.r-card::after,.review-metric strong,.pc-rate{animation:none}
@@ -485,8 +509,8 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   <div class="story-inner">
     <div class="story-copy reveal">
       <p class="kicker">Cocoa indulgence, cleaned up</p>
-      <h2>Chocolate that feels like dessert, <em>without the sugar crash.</em></h2>
-      <p>Cocosutra's sugar-free collection keeps the brand promise from the original collection page: safe for diabetics, keto friendly, vegan, gluten free, antioxidant-rich, and versatile enough for hot chocolate, iced chocolate, mochas, frappes, thick shakes, and more.</p>
+      <h2>Dessert-style cocoa, <em>zero sugar crash.</em></h2>
+      <p>Keto friendly, vegan, gluten free, and crafted for hot chocolate, iced mochas, frappes, and daily cafe-style rituals.</p>
     </div>
     <div class="story-visual reveal">
       <div class="orbit">
@@ -507,14 +531,13 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
     <div class="ritual-copy reveal">
       <p class="kicker">Loved in daily rituals</p>
       <h2>Real cups, <em>real joy.</em></h2>
-      <p>Short, sweet proof from people who made sugar-free chocolate part of their everyday routine.</p>
       <div class="review-metric"><strong>4.7</strong><span>average rating across the collection</span></div>
     </div>
     <div class="ritual-reviews reveal">
       <div class="review-orbit">
         <article class="r-card main" data-speed="-0.015">
           <div class="r-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p>"No sugar spike. Hot chocolate is back in my evenings."</p>
+          <p>"No sugar spike. Back in my evening cup."</p>
           <b>Priya S.</b><span>Swiss Vanilla 200g</span>
         </article>
         <article class="r-card side" data-speed="0.018">
