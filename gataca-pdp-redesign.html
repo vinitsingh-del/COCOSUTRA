@@ -128,6 +128,24 @@ img{display:block;max-width:100%}
 .result-caption{position:absolute;left:0;right:0;bottom:0;background:var(--green);color:var(--white);padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;font-size:19px;font-weight:800}
 .result-caption small{display:block;font-size:16px;font-weight:500;margin-top:8px;color:rgba(255,255,255,.9)}
 .mini-add{border:none;border-radius:999px;background:var(--white);color:var(--green);font-weight:800;padding:12px 28px}
+.brand-reviews{padding:58px 16px 70px;background:#f8faf7;color:#153d2a}
+.brand-review-shell{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:.74fr 1.26fr;gap:18px;align-items:stretch}
+.review-summary{border:1px solid #d5dfd4;border-radius:18px;background:var(--white);padding:28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 58px rgba(15,21,18,.06)}
+.review-summary .eyebrow{font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:#5d6962}
+.review-score{font-size:clamp(56px,7vw,86px);line-height:.9;letter-spacing:-.075em;margin:18px 0 8px}
+.review-stars{color:var(--green);font-size:22px;letter-spacing:2px;margin-bottom:10px}
+.review-summary p{font-size:17px;color:#456454;line-height:1.35;margin:0}
+.review-bars{display:grid;gap:10px;margin-top:26px}
+.review-bar{display:grid;grid-template-columns:44px 1fr 46px;gap:10px;align-items:center;font-size:13px;font-weight:800;color:#516359}
+.review-bar span:nth-child(2){height:9px;border-radius:999px;background:#e5ebe3;overflow:hidden}
+.review-bar i{display:block;height:100%;border-radius:inherit;background:var(--green)}
+.review-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.brand-review-card{border:1px solid #d5dfd4;border-radius:18px;background:var(--white);padding:22px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 18px 52px rgba(15,21,18,.055);transition:transform .28s ease,box-shadow .28s ease}
+.brand-review-card:hover{transform:translateY(-4px);box-shadow:0 26px 70px rgba(15,21,18,.1)}
+.brand-review-card .review-stars{font-size:17px;margin:0 0 14px}
+.brand-review-card h3{font-size:20px;letter-spacing:-.025em;margin:0 0 10px;color:#153d2a}
+.brand-review-card p{font-size:15px;line-height:1.42;color:#4d5e55;margin:0}
+.review-author{margin-top:18px;font-size:14px;font-weight:850;color:#153d2a}
 .no-other{padding:56px 16px;background:#f1f4ef;text-align:center;color:#163c2b}
 .no-other h2{font-size:clamp(25px,3.8vw,38px);line-height:1.08;letter-spacing:-.044em;font-weight:650;max-width:680px;margin:0 auto;text-wrap:balance}
 .no-other h2 em{font-style:italic}
@@ -210,6 +228,8 @@ img{display:block;max-width:100%}
   .cert-bg span:nth-child(2),.cert-bg span:nth-child(5){display:none}
   .result-scroll{padding-inline:24px}
   .result-card{min-width:82vw;height:520px}
+  .brand-review-shell{grid-template-columns:1fr}
+  .review-cards{grid-template-columns:1fr 1fr}
   .stat-grid{grid-template-columns:1fr}
   .stat-intro{min-height:300px;padding:28px}
   .stat-list{grid-template-columns:1fr 1fr}
@@ -248,6 +268,10 @@ img{display:block;max-width:100%}
   .result-card{height:480px}
   .result-caption{padding:20px;grid-template-columns:1fr;font-size:18px}
   .mini-add{justify-self:start}
+  .brand-reviews{padding:42px 16px 64px}
+  .review-summary{padding:22px}
+  .review-cards{grid-template-columns:1fr}
+  .brand-review-card{min-height:190px}
   .time-card{height:520px}
   .time-top h3{font-size:24px}
   .time-text{font-size:18px}
@@ -342,15 +366,6 @@ img{display:block;max-width:100%}
     </div>
   </section>
 
-  <section class="results-section" id="reviews">
-    <h2 class="center-head">Real People, Real <em>Results</em></h2>
-    <div class="result-scroll">
-      <article class="result-card"><img src="samantha-ruth-prabhu.jpg" alt="Samantha Ruth Prabhu"><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Samantha Ruth Prabhu, Gataca co-founder.</small></div><button class="mini-add">ADD</button></div></article>
-      <article class="result-card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt=""><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Sharper training days and better recovery.</small></div><button class="mini-add">ADD</button></div></article>
-      <article class="result-card"><img src="https://images.unsplash.com/photo-1526401485004-2aa4d3f6938e?auto=format&fit=crop&w=900&q=80" alt=""><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Better focus without the afternoon crash.</small></div><button class="mini-add">ADD</button></div></article>
-    </div>
-  </section>
-
   <section class="no-other">
     <h2>No Other Supplement Does What NMN <em>Does</em></h2>
     <p>GATACA Pure beta-NMN supports NAD+ production, cellular energy and recovery routines.</p>
@@ -384,6 +399,40 @@ img{display:block;max-width:100%}
       <article class="time-card"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=80" alt=""><div class="time-top"><div class="hour">HOUR 8</div><h3>NAD+ PATHWAYS<br>ARE ACTIVATED</h3></div><div class="time-text">NMN enters cells and supports NAD+ production for cellular energy and repair.</div></article>
       <article class="time-card"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80" alt=""><div class="time-top"><div class="hour">DAY 14</div><h3>ENERGY ROUTINES<br>FEEL STEADIER</h3></div><div class="time-text">Consistency helps shoppers connect the product to daily performance habits.</div></article>
       <article class="time-card"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80" alt=""><div class="time-top"><div class="hour">DAY 60</div><h3>LONGEVITY<br>COMPOUNDS</h3></div><div class="time-text">The strongest CRO path is bundle consistency, not one-off trial behavior.</div></article>
+    </div>
+  </section>
+
+  <section class="results-section" id="reviews">
+    <h2 class="center-head">Real People, Real <em>Results</em></h2>
+    <div class="result-scroll">
+      <article class="result-card"><img src="samantha-ruth-prabhu.jpg" alt="Samantha Ruth Prabhu"><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Samantha Ruth Prabhu, Gataca co-founder.</small></div><button class="mini-add">ADD</button></div></article>
+      <article class="result-card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt=""><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Sharper training days and better recovery.</small></div><button class="mini-add">ADD</button></div></article>
+      <article class="result-card"><img src="https://images.unsplash.com/photo-1526401485004-2aa4d3f6938e?auto=format&fit=crop&w=900&q=80" alt=""><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Better focus without the afternoon crash.</small></div><button class="mini-add">ADD</button></div></article>
+    </div>
+  </section>
+
+  <section class="brand-reviews" aria-label="Customer reviews from the original GATACA product page">
+    <div class="brand-review-shell">
+      <aside class="review-summary">
+        <div>
+          <div class="eyebrow">Customer Reviews</div>
+          <div class="review-score">4.90</div>
+          <div class="review-stars">★★★★★</div>
+          <p>Based on 59 reviews from the original GATACA product page.</p>
+        </div>
+        <div class="review-bars" aria-label="Review distribution">
+          <div class="review-bar"><span>5★</span><span><i style="width:90%"></i></span><span>53</span></div>
+          <div class="review-bar"><span>4★</span><span><i style="width:10%"></i></span><span>6</span></div>
+        </div>
+      </aside>
+      <div class="review-cards">
+        <article class="brand-review-card"><div><div class="review-stars">★★★★★</div><h3>Gataca to my rescue!!</h3><p>Six months in, Sadia notes better energy, skin texture and stronger nails.</p></div><div class="review-author">Sadia</div></article>
+        <article class="brand-review-card"><div><div class="review-stars">★★★★★</div><h3>Amazing Results</h3><p>GG calls out more energy, better focus and less brain fog.</p></div><div class="review-author">GG</div></article>
+        <article class="brand-review-card"><div><div class="review-stars">★★★★★</div><h3>It does what it says!</h3><p>Shaonli says afternoon dips eased and workouts started feeling better.</p></div><div class="review-author">Shaonli</div></article>
+        <article class="brand-review-card"><div><div class="review-stars">★★★★★</div><h3>Feel energised</h3><p>Raghav started noticing changes in daily activity after use.</p></div><div class="review-author">Raghav</div></article>
+        <article class="brand-review-card"><div><div class="review-stars">★★★★★</div><h3>Good product</h3><p>Arya describes it as a simple energy booster.</p></div><div class="review-author">Arya krishnady</div></article>
+        <article class="brand-review-card"><div><div class="review-stars">★★★★☆</div><h3>Review mix</h3><p>Most reviews are five-star, with a small four-star band for balanced trust.</p></div><div class="review-author">Verified customers</div></article>
+      </div>
     </div>
   </section>
 </main>
