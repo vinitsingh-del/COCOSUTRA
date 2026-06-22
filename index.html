@@ -112,28 +112,29 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .ingredient-pill b{display:block;font-family:var(--headline);font-size:17px;font-weight:550}
 .ingredient-pill span{display:block;color:rgba(255,255,255,.68);font-size:10px;margin-top:4px}
 
-.ritual{grid-area:ritual;margin-top:0;padding:12px;background:var(--cocoa);color:var(--cream);position:relative;overflow:hidden;border-radius:8px;box-shadow:0 14px 38px rgba(26,26,26,.09)}
-.ritual::before{content:'JOY';position:absolute;right:-28px;top:6px;font-family:var(--headline);font-size:min(15vw,150px);font-style:italic;color:rgba(162,78,20,.1);line-height:1}
-.ritual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.06),transparent 80px),radial-gradient(circle at 18% 32%,rgba(162,78,20,.16),transparent 26%),radial-gradient(circle at 82% 66%,rgba(255,255,255,.08),transparent 28%)}
-.ritual-inner{position:relative;z-index:1;max-width:1220px;margin:0 auto;display:grid;grid-template-columns:.56fr 1.44fr;gap:12px;align-items:center}
+.ritual{grid-area:ritual;margin-top:0;padding:26px 28px;background:var(--cocoa);color:var(--cream);position:relative;overflow:hidden;border-radius:8px;box-shadow:0 18px 44px rgba(29,29,29,.1)}
+.ritual::before{content:'JOY';position:absolute;right:-18px;top:4px;font-family:var(--headline);font-size:min(13vw,132px);font-style:italic;color:rgba(162,78,20,.09);line-height:1}
+.ritual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.05),transparent 72px),radial-gradient(circle at 15% 32%,rgba(162,78,20,.12),transparent 25%),radial-gradient(circle at 84% 66%,rgba(255,255,255,.06),transparent 28%)}
+.ritual-inner{position:relative;z-index:1;max-width:1080px;margin:0 auto;display:grid;grid-template-columns:280px minmax(0,1fr);gap:28px;align-items:center}
 .ritual-copy h2{color:var(--cream)}
 .ritual-copy h2 em{color:var(--gold-pale)}
-.ritual-copy p{display:none}
-.review-metric{display:flex;align-items:baseline;gap:7px;margin-top:8px}
-.review-metric strong{position:relative;display:inline-block;font-family:var(--headline);font-size:28px;line-height:1;color:var(--gold);animation:ratingPulse 3.2s ease-in-out infinite}
-.review-metric span{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.58)}
-.ritual-reviews{position:relative;min-height:104px;overflow:hidden}
-.review-orbit{position:relative;top:auto;min-height:104px;display:flex;gap:10px;overflow:hidden}
-.r-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;min-width:100%;overflow:hidden;background:var(--white);color:var(--ink);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:11px 12px;box-shadow:0 14px 34px rgba(0,0,0,.15);backdrop-filter:none;max-width:none;animation:reviewFlow 12s ease-in-out infinite,cardGlow 7.5s ease-in-out infinite}
+.ritual-copy .kicker{display:block;color:rgba(255,255,255,.58);font-size:8.5px;letter-spacing:.18em;margin-bottom:8px}
+.ritual-copy h2{font-size:34px;max-width:245px;line-height:.98}
+.review-metric{display:flex;align-items:center;gap:9px;margin-top:16px}
+.review-metric strong{position:relative;display:inline-block;font-family:var(--headline);font-size:27px;line-height:1;color:var(--gold);animation:ratingPulse 3.2s ease-in-out infinite}
+.review-metric span{font-size:7.8px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.58);max-width:130px;line-height:1.45}
+.ritual-reviews{position:relative;min-height:132px;overflow:hidden;width:min(100%,560px);justify-self:center}
+.review-orbit{position:relative;top:auto;min-height:132px;display:flex;gap:12px;overflow:hidden;align-items:center}
+.r-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;min-width:100%;overflow:hidden;background:var(--white);color:var(--ink);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:20px 22px;box-shadow:0 16px 34px rgba(0,0,0,.16);backdrop-filter:none;max-width:none;animation:reviewFlow 12s ease-in-out infinite,cardGlow 7.5s ease-in-out infinite}
 .r-card.main,.r-card.side,.r-card.low{width:100%;background:var(--white);color:var(--ink)}
 .r-card.low{display:block}
 .r-card.side,.r-card.side::after{animation-delay:1.4s}
 .r-card.low,.r-card.low::after{animation-delay:2.8s}
-.r-stars{color:var(--gold);font-size:10px;letter-spacing:2px;margin-bottom:6px}
-.r-card p{font-family:var(--headline);font-size:13px;font-style:italic;line-height:1.25;margin-bottom:7px}
-.r-card.side p,.r-card.low p{font-size:13px;color:var(--ink)}
-.r-card b{display:block;font-size:10.5px;color:inherit}
-.r-card span{display:block;font-size:9px;color:var(--ink-3);margin-top:1px}
+.r-stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:9px}
+.r-card p{font-family:var(--headline);font-size:18px;font-style:italic;line-height:1.35;margin-bottom:10px}
+.r-card.side p,.r-card.low p{font-size:18px;color:var(--ink)}
+.r-card b{display:block;font-size:12px;color:inherit}
+.r-card span{display:block;font-size:10.5px;color:var(--ink-3);margin-top:2px}
 .r-card.main span{color:var(--ink-3)}
 .review-tag{display:none}
 @keyframes shineSweep{
@@ -161,8 +162,8 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 }
 @keyframes reviewFlow{
   0%,24%{transform:translateX(0)}
-  33%,57%{transform:translateX(calc(-100% - 10px))}
-  66%,90%{transform:translateX(calc(-200% - 20px))}
+  33%,57%{transform:translateX(calc(-100% - 12px))}
+  66%,90%{transform:translateX(calc(-200% - 24px))}
   100%{transform:translateX(0)}
 }
 
@@ -399,21 +400,22 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .ingredient-pill{right:8px;bottom:10px;max-width:132px;padding:9px}
   .ingredient-pill b{font-size:15px}
   .ingredient-pill span{display:none}
-  .ritual{padding:12px;margin-top:10px;border-radius:9px}
-  .ritual::before{font-size:96px;right:-28px;top:8px}
-  .ritual-inner{gap:10px}
+  .ritual{padding:16px;margin-top:10px;border-radius:9px}
+  .ritual::before{font-size:86px;right:-24px;top:8px}
+  .ritual-inner{display:block}
+  .ritual-copy .kicker{font-size:7.8px;margin-bottom:6px}
   .ritual-copy h2{font-size:25px;max-width:300px}
   .review-metric{margin-top:8px;gap:7px}
-  .review-metric strong{font-size:28px}
-  .review-metric span{font-size:7.8px;letter-spacing:.08em;max-width:130px}
-  .ritual-reviews{min-height:0}
-  .review-orbit{position:relative;top:auto;min-height:94px;display:flex;flex-direction:row;gap:10px;overflow:hidden}
-  .r-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:100%!important;min-width:100%;padding:10px;max-width:none;animation:reviewFlow 12s ease-in-out infinite,cardGlow 7.5s ease-in-out infinite}
+  .review-metric strong{font-size:26px}
+  .review-metric span{font-size:7.5px;letter-spacing:.08em;max-width:130px}
+  .ritual-reviews{min-height:0;width:100%;margin-top:12px}
+  .review-orbit{position:relative;top:auto;min-height:112px;display:flex;flex-direction:row;gap:12px;overflow:hidden}
+  .r-card{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:100%!important;min-width:100%;padding:14px;max-width:none;animation:reviewFlow 12s ease-in-out infinite,cardGlow 7.5s ease-in-out infinite}
   .r-card.side{display:block}
   .r-card.low{display:block}
   .r-stars{font-size:9px;margin-bottom:6px}
-  .r-card p{font-size:11px;line-height:1.25;margin-bottom:6px}
-  .r-card.side p,.r-card.low p{font-size:11px;color:var(--ink)}
+  .r-card p{font-size:14px;line-height:1.28;margin-bottom:7px}
+  .r-card.side p,.r-card.low p{font-size:14px;color:var(--ink)}
   .r-card b{font-size:10.5px}
   .r-card span{font-size:9px}
   .review-tag{position:relative;right:auto;top:auto;align-self:flex-start;margin:0;padding:7px 10px;font-size:8px;letter-spacing:.07em}
@@ -485,20 +487,21 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .proof{min-height:62px;padding:9px}
   .proof span{font-size:7.8px;line-height:1.2}
-  .ritual{padding:12px}
+  .ritual{padding:18px}
   .ritual-inner{grid-template-columns:1fr;gap:12px}
-  .ritual-copy h2{font-size:26px}
+  .ritual-copy h2{font-size:27px;max-width:420px}
   .review-metric{margin-top:8px}
   .review-metric strong{font-size:28px}
   .review-metric span{font-size:8px;max-width:150px}
-  .ritual-reviews,.review-orbit{min-height:96px}
-  .review-orbit{display:flex;flex-direction:row;gap:10px;overflow:hidden}
-  .r-card{padding:10px;min-width:100%;animation:reviewFlow 12s ease-in-out infinite,cardGlow 7.5s ease-in-out infinite}
+  .ritual-reviews{width:100%;max-width:none}
+  .ritual-reviews,.review-orbit{min-height:112px}
+  .review-orbit{display:flex;flex-direction:row;gap:12px;overflow:hidden}
+  .r-card{padding:14px;min-width:100%;animation:reviewFlow 12s ease-in-out infinite,cardGlow 7.5s ease-in-out infinite}
   .r-card.main{position:relative;left:auto;top:auto;width:100%}
   .r-card.side{display:block}
   .r-card.low{display:block}
-  .r-card p{font-size:11.5px}
-  .r-card.side p{font-size:11.5px;color:var(--ink)}
+  .r-card p{font-size:14px}
+  .r-card.side p{font-size:14px;color:var(--ink)}
   .review-tag{display:none}
 }
 @media(prefers-reduced-motion:reduce){
