@@ -190,8 +190,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .b-best{background:var(--cocoa);color:var(--white)}
 .b-try{background:var(--gold);color:var(--cta-text)}
 .b-lim{background:var(--burnt);color:var(--white)}
-.pc-badge.b-clean{background:rgba(255,255,255,.9);color:var(--cocoa);box-shadow:0 8px 20px rgba(26,26,26,.08)}
-.pc-wish{position:absolute;top:9px;right:9px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.86);border:1px solid rgba(255,255,255,.45);display:flex;align-items:center;justify-content:center;color:var(--ink-2);transition:.15s}
+.pc-wish{position:absolute;right:9px;bottom:9px;z-index:3;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;color:var(--ink-2);transition:.15s;box-shadow:0 8px 18px rgba(29,29,29,.12)}
 .pc-wish:hover{background:#fff;color:var(--gold)}
 .pc-wish svg{width:17px;height:17px}
 .pc-wish.on svg{fill:var(--gold);stroke:var(--gold)}
@@ -199,19 +198,15 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .pc-dots i{width:5px;height:5px;border-radius:50%;background:rgba(26,26,26,.22)}
 .pc-dots i.on{background:var(--cocoa)}
 .pc-info{padding:11px 2px 0;display:flex;flex-direction:column}
-.pc-rate{display:flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--cocoa);animation:ratingPulse 4.8s ease-in-out infinite}
+.pc-rate{order:-1;display:flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--cocoa);animation:ratingPulse 4.8s ease-in-out infinite}
 .pc-star{color:var(--gold)}
 .pc-rc{color:var(--ink-3);font-weight:400}
 .pc-name{font-size:14.5px;font-weight:800;letter-spacing:.01em;color:var(--cocoa);margin-top:6px;line-height:1.2;text-transform:uppercase}
 .pc-name a{color:inherit;text-decoration:none}
 .pc-name a:hover{text-decoration:underline;text-underline-offset:3px}
 .pc-sub{font-size:11px;color:var(--ink-3);margin-top:4px;line-height:1.4;font-weight:300}
-.pc-trust{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
-.pc-chip{border:1px solid var(--rule);border-radius:999px;padding:4px 7px;font-size:8.8px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:rgba(244,244,241,.72)}
-.pc-chip.hot{border-color:rgba(162,78,20,.28);color:var(--gold);background:rgba(162,78,20,.08)}
 .pc-price-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-top:10px}
 .pc-price{font-size:15px;font-weight:800;color:var(--cocoa)}
-.pc-value{font-size:9.5px;color:var(--ink-3);text-align:right;line-height:1.25}
 .pc-urg{font-size:10px;font-weight:700;color:var(--gold);margin-top:5px}
 .pc-cro{max-height:0;opacity:0;overflow:hidden;border:1px solid transparent;border-radius:8px;margin-top:0;transform:translateY(-4px);transition:max-height .32s ease,opacity .24s ease,margin-top .24s ease,transform .24s ease}
 .pc.open .pc-cro,.pc.peek .pc-cro{max-height:210px;opacity:1;margin-top:10px;transform:translateY(0);border-color:var(--rule);background:linear-gradient(180deg,rgba(244,244,241,.78),rgba(255,255,255,.92))}
@@ -429,16 +424,13 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   #product-grid{gap:22px 10px}
   .pc-media{border-radius:7px}
   .pc-badge{font-size:7.5px;padding:4px 7px;top:8px;left:8px}
-  .pc-wish{width:30px;height:30px;top:7px;right:7px}
+  .pc-wish{width:30px;height:30px;right:7px;bottom:7px}
   .pc-wish svg{width:15px;height:15px}
   .pc-info{padding-top:8px}
   .pc-rate{font-size:10px;gap:3px;align-items:flex-start;line-height:1.25}
   .pc-name{font-size:12.5px;line-height:1.18;margin-top:5px}
   .pc-sub{font-size:9.5px;line-height:1.3}
-  .pc-trust{gap:4px;margin-top:7px}
-  .pc-chip{font-size:7.4px;padding:3px 5px;letter-spacing:.04em}
   .pc-price{font-size:13.5px}
-  .pc-value{font-size:8px;max-width:74px}
   .pc-add{font-size:10px;padding:10px;margin-top:9px}
   .pc-urg{font-size:9px}
   .pc-more{font-size:9px;margin-top:7px}
@@ -660,7 +652,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
         <div class="pc-info">
           <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 25 reviews</span></div>
           <h3 class="pc-name">Swiss Vanilla</h3>
-          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <p class="pc-sub">200g &middot; 10 servings</p>
           <div class="pc-price-row">
             <span class="pc-price">Rs. 579</span>
           </div>
@@ -680,7 +672,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
         <div class="pc-info">
           <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 22 reviews</span></div>
           <h3 class="pc-name">Mocha</h3>
-          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <p class="pc-sub">200g &middot; 10 servings</p>
           <div class="pc-price-row">
             <span class="pc-price">Rs. 579</span>
           </div>
@@ -700,7 +692,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
         <div class="pc-info">
           <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 15 reviews</span></div>
           <h3 class="pc-name">Peppermint</h3>
-          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <p class="pc-sub">200g &middot; 10 servings</p>
           <div class="pc-price-row">
             <span class="pc-price">Rs. 579</span>
           </div>
@@ -720,7 +712,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
         <div class="pc-info">
           <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 13 reviews</span></div>
           <h3 class="pc-name">Mexican Spiced</h3>
-          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <p class="pc-sub">200g &middot; 10 servings</p>
           <div class="pc-price-row">
             <span class="pc-price">Rs. 579</span>
           </div>
@@ -740,7 +732,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
         <div class="pc-info">
           <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 12 reviews</span></div>
           <h3 class="pc-name">Hazelnut</h3>
-          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <p class="pc-sub">200g &middot; 10 servings</p>
           <div class="pc-price-row">
             <span class="pc-price">Rs. 579</span>
           </div>
@@ -760,7 +752,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
         <div class="pc-info">
           <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">| 10 reviews</span></div>
           <h3 class="pc-name">Caramel</h3>
-          <p class="pc-sub">200g &middot; Approx. 10 servings</p>
+          <p class="pc-sub">200g &middot; 10 servings</p>
           <div class="pc-price-row">
             <span class="pc-price">Rs. 579</span>
           </div>
@@ -1163,36 +1155,12 @@ function hydrateProductCards(){
     const media=card.querySelector('.pc-media');
     const name=nameEl?.textContent.trim()||'Cocosutra cocoa';
     const sub=subEl?.textContent.trim()||'';
-    const category=card.dataset.category||'all';
     const link=productSearchUrl(name);
     card.dataset.link=link;
     if(nameEl&&!nameEl.querySelector('a')){
       nameEl.innerHTML=`<a href="${link}" target="_blank" rel="noopener" aria-label="View ${name} details">${name}</a>`;
     }
-    if(media&&!media.querySelector('.pc-badge')){
-      const badge=document.createElement('span');
-      badge.className='pc-badge b-clean';
-      badge.textContent=category==='functional'?'Wellness':'Zero Sugar';
-      media.prepend(badge);
-    }
-    const reviews=+(card.dataset.reviews||0);
-    const priceText=priceEl?.textContent||'';
-    const price=+(priceText.match(/[\d,]+/)?.[0]||'0').replace(/,/g,'');
-    const serveMatch=sub.match(/(\d+)\s*(servings|sachets)/i);
-    const serves=serveMatch?+serveMatch[1]:(sub.toLowerCase().includes('pack of 2')?20:10);
-    const perServe=price&&serves?`Rs. ${Math.round(price/serves)}/cup`:'Great value';
-    const trust=document.createElement('div');
-    trust.className='pc-trust';
-    const chips=['0g Sugar','Keto'];
-    if(category==='functional')chips.push('Wellness');
-    else chips.push('Vegan');
-    if(reviews>=20)chips.unshift('Loved');
-    trust.innerHTML=chips.slice(0,3).map((c,idx)=>`<span class="pc-chip ${idx===0&&reviews>=20?'hot':''}">${c}</span>`).join('');
-    subEl?.insertAdjacentElement('afterend',trust);
-    const priceRow=card.querySelector('.pc-price-row');
-    if(priceRow&&!priceRow.querySelector('.pc-value')){
-      priceRow.insertAdjacentHTML('beforeend',`<span class="pc-value">${perServe}<br>approx.</span>`);
-    }
+    const category=card.dataset.category||'all';
     const more=document.createElement('button');
     more.type='button';
     more.className='pc-more';
