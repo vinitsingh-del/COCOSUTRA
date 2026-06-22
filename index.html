@@ -187,7 +187,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .pc.open{z-index:5}
 .pc.open .pc-media{box-shadow:0 18px 42px rgba(26,26,26,.12);border-color:rgba(162,78,20,.24)}
 .pc-media{position:relative;background:var(--tile);border-radius:8px;overflow:hidden;aspect-ratio:1/1;border:1px solid var(--rule)}
-.pc-media::after{content:'';position:absolute;inset:auto 0 0;height:36%;background:linear-gradient(0deg,rgba(29,29,29,.18),transparent);pointer-events:none}
+.pc-media::after{content:'';position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(0deg,rgba(29,29,29,.12),transparent);pointer-events:none}
 .pc-media img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
 .pc:hover .pc-media img{transform:scale(1.055) translateY(-2px)}
 .pc-badge{position:absolute;top:10px;left:10px;z-index:2;font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:999px}
@@ -198,15 +198,15 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .pc-wish:hover{background:#fff;color:var(--gold)}
 .pc-wish svg{width:17px;height:17px}
 .pc-wish.on svg{fill:var(--gold);stroke:var(--gold)}
-.pc-dots{position:absolute;bottom:44px;left:50%;transform:translateX(-50%);display:flex;justify-content:center;gap:5px;z-index:3}
+.pc-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;justify-content:center;gap:5px;z-index:3}
 .pc-dots i{width:5px;height:5px;border-radius:50%;background:rgba(26,26,26,.22)}
 .pc-dots i.on{background:var(--cocoa)}
 .pc-info{padding:11px 2px 0;display:flex;flex-direction:column}
 .pc-rate{order:-1;display:flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--cocoa)}
-.pc-media .pc-rate{position:absolute;left:9px;bottom:9px;z-index:4;order:0;display:inline-flex;align-items:center;gap:4px;max-width:calc(100% - 54px);min-height:30px;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.56);box-shadow:0 8px 18px rgba(29,29,29,.12);backdrop-filter:blur(12px);font-size:10.5px;line-height:1;color:var(--cocoa);animation:ratingBlink 2.3s ease-in-out infinite}
+.pc-media .pc-rate{position:absolute;right:9px;top:9px;z-index:4;order:0;display:inline-flex;align-items:center;gap:4px;min-height:28px;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.56);box-shadow:0 8px 18px rgba(29,29,29,.12);backdrop-filter:blur(12px);font-size:10.5px;line-height:1;color:var(--cocoa);animation:ratingBlink 2.3s ease-in-out infinite}
 .pc-star{color:var(--gold);animation:ratingBlink 2.3s ease-in-out infinite}
 .pc-rc{color:var(--ink-3);font-weight:400}
-.pc-media .pc-rc{font-size:9.2px;color:var(--ink-2);white-space:nowrap;border-left:1px solid rgba(29,29,29,.18);padding-left:6px;margin-left:2px}
+.pc-media .pc-rc{display:none}
 .pc-media .pc-rate strong{animation:ratingBlink 2.3s ease-in-out infinite}
 .pc-name{font-size:14.5px;font-weight:800;letter-spacing:.01em;color:var(--cocoa);margin-top:6px;line-height:1.2;text-transform:uppercase}
 .pc-name a{color:inherit;text-decoration:none}
@@ -433,12 +433,11 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .pc-badge{font-size:7.5px;padding:4px 7px;top:8px;left:8px}
   .pc-wish{width:30px;height:30px;right:7px;bottom:7px}
   .pc-wish svg{width:15px;height:15px}
-  .pc-dots{bottom:42px}
+  .pc-dots{bottom:9px}
   .pc-info{padding-top:8px}
   .pc-rate{font-size:10px;gap:3px;align-items:flex-start;line-height:1.25}
-  .pc-media .pc-rate{left:7px;bottom:7px;min-height:28px;max-width:calc(100% - 48px);padding:5px 7px;font-size:9.2px;gap:3px}
-  .pc-media .pc-rc{font-size:0;padding-left:5px;margin-left:1px}
-  .pc-media .pc-rc::after{content:attr(data-short);font-size:8.2px}
+  .pc-media .pc-rate{right:7px;top:7px;min-height:26px;padding:5px 7px;font-size:9.2px;gap:3px}
+  .pc-media .pc-rc{display:none}
   .pc-name{font-size:12.5px;line-height:1.18;margin-top:5px}
   .pc-sub{font-size:9.5px;line-height:1.3}
   .pc-price{font-size:13.5px}
@@ -659,7 +658,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraSwissVanillaSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479247&width=500" alt="Swiss Vanilla" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="25">25 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">25 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">Swiss Vanilla</h3>
@@ -679,7 +678,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraMochaSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479454&width=500" alt="Mocha" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="22">22 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">22 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">Mocha</h3>
@@ -699,7 +698,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraPeppermintSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702485062&width=500" alt="Peppermint" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="15">15 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">15 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">Peppermint</h3>
@@ -719,7 +718,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraMexicanSpicedSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479569&width=500" alt="Mexican Spiced" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="13">13 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">13 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">Mexican Spiced</h3>
@@ -739,7 +738,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraHazelnutSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702480082&width=500" alt="Hazelnut" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="12">12 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">12 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">Hazelnut</h3>
@@ -759,7 +758,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraCaramelSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702484961&width=500" alt="Caramel" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="10">10 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">10 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">Caramel</h3>
@@ -779,7 +778,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraFocusSugarFreeDrinkingChocolateMix200g-EnhancesMentalAlertness-Front_Website.jpg?v=1702469452&width=500" alt="FOCUS" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="52">52 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">52 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">FOCUS</h3>
@@ -799,7 +798,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraRelax-MelatoninBasedSugarFreeDrinkingChocolateMix200g-Front_Website.jpg?v=1702469537&width=500" alt="RELAX" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="42">42 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">42 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">RELAX</h3>
@@ -819,7 +818,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraBalanceSugarFreeDrinkingChocolateMix200g-ForGutHealth-Front_Website.jpg?v=1702469382&width=500" alt="BALANCE" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="15">15 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">15 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">BALANCE</h3>
@@ -839,7 +838,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/CocosutraDefendSugarFreeDrinkingChocolateMix200g-ForStrength_Immunity-Front_Website.jpg?v=1702469218&width=500" alt="DEFEND" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="12">12 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">12 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">DEFEND</h3>
@@ -859,7 +858,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/COCOSU_4_b14c32d6-5dbc-4823-b03e-255d31ab4feb.jpg?v=1702469679&width=500" alt="GLOW" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="12">12 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">12 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">GLOW</h3>
@@ -879,7 +878,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/COCOSU_4.jpg?v=1702469604&width=500" alt="SOOTHE" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="10">10 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">10 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">SOOTHE</h3>
@@ -899,7 +898,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/Cool_like_ashwagandha.jpg?v=1742553975&width=500" alt="Focus Relax Pack" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="8">8 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">8 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">FOCUS and RELAX</h3>
@@ -919,7 +918,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/COCOSU_1_b5f49af6-faed-4530-b3fc-736b5dbb85fb.jpg?v=1745492195&width=500" alt="Relax Focus Sachets" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="4">4 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">4 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">RELAX and FOCUS Sachets</h3>
@@ -939,7 +938,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/COCOSU_2_c7623bfd-325c-4af6-b4aa-f67681a481fb.jpg?v=1745492195&width=500" alt="Soothe Glow Sachets" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="3">3 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">3 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">SOOTHE and GLOW Sachets</h3>
@@ -959,7 +958,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
           </button>
           <img src="https://cocosutra.com/cdn/shop/files/COCOSU_1_2b4c5cca-89f5-49eb-8a22-0af2c78aee80.jpg?v=1745492195&width=500" alt="Balance Defend Sachets" loading="lazy">
           <span class="pc-dots"><i class="on"></i><i></i></span>
-          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc" data-short="3">3 reviews</span></div>
+          <div class="pc-rate"><span class="pc-star">&#9733;</span> 4.7 <span class="pc-rc">3 reviews</span></div>
         </div>
         <div class="pc-info">
           <h3 class="pc-name">BALANCE and DEFEND Sachets</h3>
