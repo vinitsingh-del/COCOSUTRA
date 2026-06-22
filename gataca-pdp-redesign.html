@@ -165,6 +165,11 @@ img{display:block;max-width:100%}
 .result-caption{position:absolute;left:0;right:0;bottom:0;background:var(--green);color:var(--white);padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;font-size:19px;font-weight:800}
 .result-caption small{display:block;font-size:16px;font-weight:500;margin-top:8px;color:rgba(255,255,255,.9)}
 .mini-add{border:none;border-radius:999px;background:var(--white);color:var(--green);font-weight:800;padding:12px 28px}
+@media(min-width:900px){
+  .results-section .center-head{margin-bottom:30px}
+  .result-scroll{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;overflow:visible;padding:0 16px 16px;justify-content:center}
+  .result-card{min-width:0;width:100%;height:500px;scroll-snap-align:none}
+}
 .brand-reviews{padding:58px 16px 70px;background:#f8faf7;color:#153d2a}
 .brand-review-shell{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:.74fr 1.26fr;gap:18px;align-items:stretch}
 .review-summary{border:1px solid #d5dfd4;border-radius:18px;background:var(--white);padding:28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 58px rgba(15,21,18,.06)}
@@ -655,8 +660,8 @@ img{display:block;max-width:100%}
     <h2 class="center-head">Real People, Real <em>Results</em></h2>
     <div class="result-scroll">
       <article class="result-card"><img src="samantha-ruth-prabhu.jpg" alt="Samantha Ruth Prabhu"><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Samantha Ruth Prabhu, Gataca co-founder.</small></div><button class="mini-add">ADD</button></div></article>
-      <article class="result-card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt=""><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Sharper training days and better recovery.</small></div><button class="mini-add">ADD</button></div></article>
-      <article class="result-card"><img src="https://images.unsplash.com/photo-1526401485004-2aa4d3f6938e?auto=format&fit=crop&w=900&q=80" alt=""><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Better focus without the afternoon crash.</small></div><button class="mini-add">ADD</button></div></article>
+      <article class="result-card"><img src="gataca-result-training.jpg" alt="GATACA customer training result"><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Sharper training days and better recovery.</small></div><button class="mini-add">ADD</button></div></article>
+      <article class="result-card"><img src="gataca-result-focus.jpg" alt="GATACA customer focus result"><div class="play"><span>▶</span></div><div class="result-caption"><div>★ 4.8<small>Better focus without the afternoon crash.</small></div><button class="mini-add">ADD</button></div></article>
     </div>
   </section>
 
