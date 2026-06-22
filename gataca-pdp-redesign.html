@@ -181,6 +181,49 @@ img{display:block;max-width:100%}
 .hour{display:inline-flex;border:2px solid rgba(255,255,255,.9);border-radius:999px;padding:8px 24px;font-weight:800;margin-bottom:38px}
 .time-top h3{font-size:clamp(22px,2.6vw,28px);line-height:1.24;font-weight:750;letter-spacing:-.022em}
 .time-text{position:absolute;left:0;right:0;bottom:0;background:var(--green);padding:26px;font-size:clamp(18px,2vw,21px);font-weight:600}
+.learn-section{background:#f8faf7;padding:58px 16px;color:#153d2a}
+.learn-shell{max-width:1120px;margin:0 auto}
+.learn-head{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1fr);gap:28px;align-items:end;margin-bottom:24px}
+.learn-head h2{font-size:clamp(28px,4vw,44px);line-height:1.02;letter-spacing:-.055em;margin:0;text-wrap:balance}
+.learn-head p{font-size:17px;line-height:1.45;color:#496557;margin:0;max-width:560px}
+.learn-tabs{display:flex;gap:10px;margin:0 0 18px;overflow-x:auto;scrollbar-width:none}
+.learn-tabs::-webkit-scrollbar{display:none}
+.learn-tab{border:1px solid #cfdad0;background:#fff;color:#153d2a;border-radius:999px;padding:11px 22px;font-size:16px;font-weight:800;min-width:90px;transition:background .24s ease,color .24s ease,box-shadow .24s ease}
+.learn-tab.active{background:#153d2a;color:#fff;box-shadow:0 12px 32px rgba(21,61,42,.18)}
+.learn-panel{display:none;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:18px;align-items:stretch}
+.learn-panel.active{display:grid}
+.nad-card,.learn-copy{border:1px solid #d5dfd4;border-radius:24px;background:#fff;box-shadow:0 22px 70px rgba(15,21,18,.07);overflow:hidden}
+.nad-card{background:#f2e5d2;padding:26px;position:relative;min-height:520px;display:grid;align-items:center}
+.nad-chart-title{position:absolute;top:26px;left:32px;right:32px;text-align:center;color:#183c2a;font-weight:800;font-size:clamp(21px,2.8vw,30px);letter-spacing:-.03em}
+.nad-chart-title strong{font-size:clamp(54px,7vw,86px);line-height:.8;color:#ffb73f;letter-spacing:-.075em}
+.nad-chart-title span{display:block}
+.nad-chart{width:100%;height:auto;margin-top:64px;filter:drop-shadow(0 12px 20px rgba(72,54,32,.08))}
+.chart-path{fill:none;stroke-width:4;stroke-linecap:round;stroke-dasharray:720;stroke-dashoffset:720;animation:drawCurve 1.5s ease forwards}
+.chart-path.nad{stroke:#1f2b2d}
+.chart-path.mito{stroke:#9ec3aa;animation-delay:.18s}
+.chart-path.cd38{stroke:#c7383c;animation-delay:.34s}
+.you-dot{transform-origin:center;animation:softFloat 5s ease-in-out infinite}
+.learn-copy{padding:32px;display:flex;flex-direction:column;justify-content:space-between}
+.learn-copy small{font-size:12px;font-weight:850;letter-spacing:.15em;text-transform:uppercase;color:#66756c}
+.learn-copy h3{font-size:clamp(28px,3.4vw,42px);line-height:1.04;letter-spacing:-.052em;margin:16px 0;color:#153d2a}
+.learn-copy p{font-size:17px;line-height:1.48;color:#425a4e;margin:0}
+.learn-points{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:24px}
+.learn-point{border:1px solid #d5dfd4;border-radius:16px;background:#f8fbf7;padding:16px;min-height:96px}
+.learn-point b{display:block;font-size:18px;letter-spacing:-.025em;margin-bottom:6px}
+.learn-point span{font-size:13px;line-height:1.3;color:#617168}
+.benefit-lab{background:#edf2ec;padding:56px 0 66px;color:#153d2a;overflow:hidden}
+.benefit-lab .center-head{margin-bottom:10px}
+.benefit-lab p{max-width:640px;margin:0 auto 28px;text-align:center;color:#496557;font-size:17px;line-height:1.45;padding:0 16px}
+.benefit-rail{display:flex;gap:14px;overflow-x:auto;padding:6px max(18px,calc((100vw - 1120px)/2)) 18px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.benefit-rail::-webkit-scrollbar{display:none}
+.benefit-chip{min-width:min(72vw,260px);height:172px;border:1px solid #d5dfd4;border-radius:20px;background:#fff;padding:22px;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 18px 54px rgba(15,21,18,.065);position:relative;overflow:hidden;animation:benefitHover 7s ease-in-out infinite}
+.benefit-chip:nth-child(2n){animation-delay:-1.4s}
+.benefit-chip:nth-child(3n){animation-delay:-2.8s}
+.benefit-chip::after{content:'';position:absolute;right:-34px;bottom:-34px;width:96px;height:96px;border-radius:50%;border:1px solid rgba(21,61,42,.14)}
+.benefit-chip small{font-size:12px;font-weight:850;letter-spacing:.14em;color:#6b786f}
+.benefit-chip b{font-size:22px;line-height:1.05;letter-spacing:-.04em;max-width:190px}
+.benefit-cta{display:flex;justify-content:center;margin-top:8px}
+.benefit-cta a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border-radius:999px;background:#153d2a;color:#fff;text-decoration:none;font-weight:850;padding:0 24px;box-shadow:0 16px 44px rgba(21,61,42,.16)}
 .sticky-buy{position:fixed;left:50%;bottom:16px;transform:translateX(-50%) translateY(120%);z-index:80;width:min(700px,calc(100% - 24px));background:rgba(246,250,246,.7);border:1px solid rgba(255,255,255,.72);box-shadow:0 22px 58px rgba(15,21,18,.24);backdrop-filter:blur(26px) saturate(1.18);border-radius:26px;padding:10px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;transition:transform .34s ease}
 .sticky-buy.show{transform:translateX(-50%) translateY(0)}
 .sticky-thumb{width:54px;height:54px;border-radius:16px;background:linear-gradient(145deg,#eaf2e8,#fff);display:grid;place-items:center;overflow:hidden;border:1px solid rgba(47,91,66,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
@@ -199,6 +242,9 @@ img{display:block;max-width:100%}
 @keyframes certDrift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-46px,-46px,0)}}
 @keyframes certFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @keyframes certTileGlow{0%,100%{box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 0 18px rgba(184,215,169,.14)}50%{box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 0 34px rgba(184,215,169,.34)}}
+@keyframes drawCurve{to{stroke-dashoffset:0}}
+@keyframes softFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes benefitHover{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in-view{opacity:1;transform:translateY(0)}
 .reveal-stagger>*{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
@@ -237,6 +283,10 @@ img{display:block;max-width:100%}
   .result-card{min-width:82vw;height:520px}
   .brand-review-shell{grid-template-columns:1fr}
   .review-cards{grid-template-columns:1fr 1fr}
+  .learn-head{grid-template-columns:1fr;gap:12px}
+  .learn-panel,.learn-panel.active{grid-template-columns:1fr}
+  .nad-card{min-height:460px;padding:20px}
+  .learn-copy{padding:24px}
   .stat-grid{grid-template-columns:1fr}
   .stat-intro{min-height:300px;padding:28px}
   .stat-list{grid-template-columns:1fr 1fr}
@@ -286,6 +336,15 @@ img{display:block;max-width:100%}
   .review-summary{padding:22px}
   .review-cards{grid-template-columns:1fr}
   .brand-review-card{min-height:190px}
+  .learn-section{padding:42px 12px}
+  .learn-tab{min-width:76px;padding:10px 18px}
+  .nad-card{min-height:390px;border-radius:18px}
+  .nad-chart-title{top:18px;left:18px;right:18px}
+  .nad-chart{margin-top:52px}
+  .learn-copy{border-radius:18px;padding:22px}
+  .learn-points{grid-template-columns:1fr}
+  .benefit-lab{padding:42px 0 58px}
+  .benefit-chip{min-width:76vw;height:154px}
   .time-card{height:520px}
   .time-top h3{font-size:24px}
   .time-text{font-size:18px}
@@ -422,6 +481,88 @@ img{display:block;max-width:100%}
     </div>
   </section>
 
+  <section class="learn-section" id="nmn-guide">
+    <div class="learn-shell">
+      <div class="learn-head">
+        <h2>Must read before you take Pure β-NMN.</h2>
+        <p>Adapted from GATACA's original Why, What, Who and When education flow, rebuilt as a cleaner interactive guide.</p>
+      </div>
+      <div class="learn-tabs" role="tablist" aria-label="NMN education">
+        <button class="learn-tab active" type="button" data-tab="why">Why</button>
+        <button class="learn-tab" type="button" data-tab="what">What</button>
+        <button class="learn-tab" type="button" data-tab="who">Who</button>
+        <button class="learn-tab" type="button" data-tab="when">When</button>
+      </div>
+      <div class="learn-panel active" data-panel="why">
+        <div class="nad-card">
+          <div class="nad-chart-title"><strong>65%</strong><span>Decline in NAD+ from ages 30-70</span></div>
+          <svg class="nad-chart" viewBox="0 0 720 520" role="img" aria-label="NAD+ levels decline with age while CD38 levels rise">
+            <defs><radialGradient id="nadGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffbf4c" stop-opacity=".9"/><stop offset="1" stop-color="#f7a52f" stop-opacity=".72"/></radialGradient></defs>
+            <path d="M82 74v365h574" fill="none" stroke="#313131" stroke-width="4"/><path d="M82 74l-8 14M82 74l8 14M656 439l-14-8M656 439l-14 8" fill="none" stroke="#313131" stroke-width="4"/>
+            <text x="42" y="285" transform="rotate(-90 42 285)" font-size="24" font-weight="800" fill="#303030">Activity Levels</text><text x="606" y="474" font-size="24" font-weight="800" fill="#303030">Age</text>
+            <text x="174" y="470" font-size="22" fill="#444">20</text><text x="320" y="470" font-size="22" fill="#444">40</text><text x="470" y="470" font-size="22" fill="#444">60</text><text x="615" y="470" font-size="22" fill="#444">80</text>
+            <circle class="you-dot" cx="390" cy="305" r="138" fill="url(#nadGlow)" opacity=".92"/><text x="329" y="305" font-size="22" fill="#252525">You Are Here</text>
+            <path class="chart-path nad" d="M135 176 C226 342, 355 388, 586 404"/><path class="chart-path mito" d="M121 158 C206 314, 344 379, 548 398"/><path class="chart-path cd38" d="M115 405 C303 408, 503 356, 606 178"/>
+            <text x="114" y="230" font-size="22" font-weight="800" fill="#252525" transform="rotate(62 114 230)">NAD+ Levels</text>
+            <text x="231" y="208" font-size="21" fill="#252525">Mitochondrial<tspan x="231" dy="24">Function & Sirtuin Activation</tspan></text>
+            <text x="566" y="204" font-size="20" fill="#252525" transform="rotate(-74 566 204)">CD38 Levels</text>
+          </svg>
+        </div>
+        <div class="learn-copy">
+          <div><small>Why it matters</small><h3>NAD+, the super molecule.</h3><p>NAD+ supports cellular energy and sirtuin activity. GATACA frames NMN as a daily precursor ritual because NAD+ naturally declines with age.</p></div>
+          <div class="learn-points"><div class="learn-point"><b>Cell energy</b><span>Supports the pathways behind everyday stamina.</span></div><div class="learn-point"><b>Age-aware</b><span>Designed for consistency as NAD+ levels taper over time.</span></div></div>
+        </div>
+      </div>
+      <div class="learn-panel" data-panel="what">
+        <div class="nad-card">
+          <div class="nad-chart-title"><strong>β</strong><span>Beta-NMN as a daily NAD+ precursor</span></div>
+          <svg class="nad-chart" viewBox="0 0 720 520" aria-hidden="true"><circle cx="360" cy="260" r="170" fill="#f3e2ca"/><circle cx="360" cy="260" r="112" fill="#153d2a"/><text x="286" y="250" font-size="54" font-weight="850" fill="#fff">NMN</text><text x="240" y="305" font-size="25" fill="#fff">NAD+ precursor</text><path class="chart-path mito" d="M120 390 C230 200, 460 210, 600 130"/><path class="chart-path cd38" d="M110 130 C250 300, 470 320, 610 390"/></svg>
+        </div>
+        <div class="learn-copy">
+          <div><small>What it is</small><h3>Pure β-NMN 500mg in a capsule ritual.</h3><p>NMN is positioned as a clean nutraceutical input for NAD+ production, cellular repair pathways and daily energy routines.</p></div>
+          <div class="learn-points"><div class="learn-point"><b>500mg</b><span>One focused daily dose.</span></div><div class="learn-point"><b>Vegan</b><span>30 vegetarian capsules per bottle.</span></div></div>
+        </div>
+      </div>
+      <div class="learn-panel" data-panel="who">
+        <div class="nad-card">
+          <div class="nad-chart-title"><strong>30+</strong><span>Built for proactive ageing support</span></div>
+          <svg class="nad-chart" viewBox="0 0 720 520" aria-hidden="true"><rect x="104" y="128" width="512" height="264" rx="34" fill="#fff" opacity=".62"/><circle cx="224" cy="260" r="72" fill="#153d2a"/><circle cx="360" cy="260" r="72" fill="#406f51"/><circle cx="496" cy="260" r="72" fill="#ffb73f"/><text x="190" y="268" font-size="22" fill="#fff" font-weight="800">Focus</text><text x="320" y="268" font-size="22" fill="#fff" font-weight="800">Energy</text><text x="456" y="268" font-size="22" fill="#1e2f24" font-weight="800">Repair</text></svg>
+        </div>
+        <div class="learn-copy">
+          <div><small>Who it is for</small><h3>For energy, recovery and longevity-minded adults.</h3><p>The original GATACA page points toward people noticing fatigue, low output, slower recovery or a desire to build a more consistent wellness ritual.</p></div>
+          <div class="learn-points"><div class="learn-point"><b>Busy adults</b><span>For steadier output across the day.</span></div><div class="learn-point"><b>Active routines</b><span>For recovery and endurance support.</span></div></div>
+        </div>
+      </div>
+      <div class="learn-panel" data-panel="when">
+        <div class="nad-card">
+          <div class="nad-chart-title"><strong>AM</strong><span>Make it part of the daily ritual</span></div>
+          <svg class="nad-chart" viewBox="0 0 720 520" aria-hidden="true"><circle cx="360" cy="242" r="112" fill="#ffb73f"/><path d="M360 64v58M360 362v58M182 242h58M480 242h58M234 116l42 42M444 326l42 42M486 116l-42 42M276 326l-42 42" stroke="#153d2a" stroke-width="16" stroke-linecap="round"/><rect x="205" y="382" width="310" height="62" rx="31" fill="#153d2a"/><text x="250" y="422" font-size="25" fill="#fff" font-weight="800">Daily consistency</text></svg>
+        </div>
+        <div class="learn-copy">
+          <div><small>When to take</small><h3>Keep it simple and repeatable.</h3><p>Make NMN part of a morning routine or a consistent daily slot. The CRO point is clarity: fewer decisions, better adherence.</p></div>
+          <div class="learn-points"><div class="learn-point"><b>Daily</b><span>Consistency beats occasional use.</span></div><div class="learn-point"><b>With routine</b><span>Pair with breakfast, training or a wellness stack.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefit-lab">
+    <h2 class="center-head">What Pure β-NMN Helps <em>Support</em></h2>
+    <p>Condensed from GATACA's benefit language into a lighter scan-friendly rail.</p>
+    <div class="benefit-rail">
+      <article class="benefit-chip"><small>01</small><b>Boosts energy</b></article>
+      <article class="benefit-chip"><small>02</small><b>Improves endurance</b></article>
+      <article class="benefit-chip"><small>03</small><b>Slows down ageing</b></article>
+      <article class="benefit-chip"><small>04</small><b>Supports muscle recovery</b></article>
+      <article class="benefit-chip"><small>05</small><b>Enhances focus</b></article>
+      <article class="benefit-chip"><small>06</small><b>Promotes heart health</b></article>
+      <article class="benefit-chip"><small>07</small><b>Improves insulin sensitivity</b></article>
+      <article class="benefit-chip"><small>08</small><b>Strengthens immunity</b></article>
+      <article class="benefit-chip"><small>09</small><b>Supports skin vitality</b></article>
+    </div>
+    <div class="benefit-cta"><a href="#buy">Build my NMN ritual</a></div>
+  </section>
+
   <section class="results-section" id="reviews">
     <h2 class="center-head">Real People, Real <em>Results</em></h2>
     <div class="result-scroll">
@@ -474,12 +615,19 @@ document.querySelectorAll('.size-card').forEach(card=>{
 });
 const sticky=document.getElementById('stickyBuy');
 window.addEventListener('scroll',()=>sticky.classList.toggle('show',window.scrollY>520),{passive:true});
+document.querySelectorAll('.learn-tab').forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    const target=tab.dataset.tab;
+    document.querySelectorAll('.learn-tab').forEach(item=>item.classList.toggle('active',item===tab));
+    document.querySelectorAll('.learn-panel').forEach(panel=>panel.classList.toggle('active',panel.dataset.panel===target));
+  });
+});
 const revealTargets=[
   '.hero-frame h1','.hero-art','.benefit-tabs','.product-info','.cert-card',
-  '.results-section .center-head','.no-other','.stat-grid','.timeline .center-head'
+  '.results-section .center-head','.learn-head','.learn-tabs','.benefit-lab .center-head','.no-other','.stat-grid','.timeline .center-head'
 ];
 document.querySelectorAll(revealTargets.join(',')).forEach(el=>el.classList.add('reveal'));
-document.querySelectorAll('.benefit-tabs,.cert-grid,.result-scroll,.stat-grid,.time-scroll').forEach(el=>el.classList.add('reveal-stagger'));
+document.querySelectorAll('.benefit-tabs,.cert-grid,.result-scroll,.benefit-rail,.stat-grid,.time-scroll').forEach(el=>el.classList.add('reveal-stagger'));
 const revealObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
