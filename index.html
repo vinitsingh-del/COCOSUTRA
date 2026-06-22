@@ -99,18 +99,13 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
 .proof span{display:block;color:var(--ink-3);font-size:8px;text-transform:uppercase;letter-spacing:.07em;margin-top:4px;line-height:1.25}
 .story-visual{min-height:218px;position:relative}
 .orbit{position:sticky;top:92px;min-height:218px;border:1px solid var(--rule);border-radius:8px;background:linear-gradient(135deg,#fff 0%,#F7F7F4 58%,rgba(162,78,20,.08) 100%);overflow:hidden;box-shadow:0 16px 42px rgba(26,26,26,.06)}
-.orbit::before{content:'';position:absolute;inset:18px;border:1px solid rgba(26,26,26,.08);border-radius:6px}
-.orbit::after{content:'ZERO SUGAR';position:absolute;left:24px;bottom:20px;font-size:11px;font-weight:800;letter-spacing:.2em;color:rgba(26,26,26,.2)}
-.orb-img{position:absolute;border-radius:8px;box-shadow:var(--shadow);overflow:hidden;background:var(--tile)}
-.orb-img img{width:100%;height:100%;object-fit:cover;animation:productShake 7.2s ease-in-out infinite;transform-origin:center}
-.orb-mini img{animation-delay:2.4s}
-.orb-sachet img{animation-delay:4.8s}
-.orb-main{right:6%;top:22px;width:54%;aspect-ratio:1/1}
-.orb-mini{left:6%;top:12px;width:30%;aspect-ratio:4/5;rotate:-6deg}
-.orb-sachet{left:17%;bottom:18px;width:30%;aspect-ratio:1/1;rotate:5deg}
-.ingredient-pill{position:absolute;right:18px;bottom:18px;background:var(--cocoa);color:var(--cream);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:11px;max-width:190px;box-shadow:var(--shadow)}
-.ingredient-pill b{display:block;font-family:var(--headline);font-size:17px;font-weight:550}
-.ingredient-pill span{display:block;color:rgba(255,255,255,.68);font-size:10px;margin-top:4px}
+.orbit::before{content:'';position:absolute;inset:12px;border:1px solid rgba(255,255,255,.36);border-radius:6px;z-index:2;pointer-events:none}
+.story-video{position:absolute;inset:-7% -7% -10% -7%;width:114%;height:117%;object-fit:cover;object-position:center center;filter:saturate(1.02) contrast(1.02);z-index:0}
+.video-logo-cover{position:absolute;right:-2px;bottom:-2px;width:148px;height:46px;z-index:1;background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(248,241,231,.54));backdrop-filter:blur(12px);border-radius:16px 0 0 0;opacity:.92;pointer-events:none}
+.orbit.video-card::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,255,255,.12),transparent 34%,rgba(29,29,29,.06)),linear-gradient(0deg,rgba(29,29,29,.12),transparent 34%);pointer-events:none}
+.ingredient-pill{position:absolute;right:18px;top:50%;transform:translateY(-50%);z-index:3;background:rgba(29,29,29,.9);color:var(--cream);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:13px 14px;max-width:210px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}
+.ingredient-pill b{display:block;font-family:var(--headline);font-size:20px;font-weight:550;line-height:1.08}
+.ingredient-pill span{display:block;color:rgba(255,255,255,.72);font-size:10.5px;margin-top:7px;line-height:1.45}
 
 .ritual{grid-area:ritual;margin-top:0;padding:26px 28px;background:var(--cocoa);color:var(--cream);position:relative;overflow:hidden;border-radius:8px;box-shadow:0 18px 44px rgba(29,29,29,.1)}
 .ritual::before{content:'JOY';position:absolute;right:-18px;top:4px;font-family:var(--headline);font-size:min(13vw,132px);font-style:italic;color:rgba(162,78,20,.09);line-height:1}
@@ -395,11 +390,9 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .story-visual{min-height:185px}
   .orbit{position:relative;top:auto;min-height:185px}
   .orbit::before{inset:10px}
-  .orbit::after{left:14px;bottom:12px;font-size:9px}
-  .orb-main{width:62%;right:-2%;top:24px}
-  .orb-mini{width:38%;left:5%;top:18px}
-  .orb-sachet{width:38%;left:8%;bottom:20px}
-  .ingredient-pill{right:8px;bottom:10px;max-width:132px;padding:9px}
+  .story-video{inset:-5% -16% -8% -16%;width:132%;height:113%;object-position:center center}
+  .video-logo-cover{width:108px;height:34px}
+  .ingredient-pill{right:8px;top:auto;bottom:10px;transform:none;max-width:138px;padding:9px}
   .ingredient-pill b{font-size:15px}
   .ingredient-pill span{display:none}
   .ritual{padding:16px;margin-top:10px;border-radius:9px}
@@ -507,7 +500,7 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
   .review-tag{display:none}
 }
 @media(prefers-reduced-motion:reduce){
-  .hero-bg,.marquee-track,.proof::after,.r-card,.r-card::after,.review-metric strong,.pc-rate,.orb-img,.orb-img img{animation:none}
+  .hero-bg,.marquee-track,.proof::after,.r-card,.r-card::after,.review-metric strong,.pc-rate{animation:none}
   .reveal{opacity:1;transform:none;transition:none}
 }
 </style>
@@ -587,11 +580,12 @@ nav{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1p
       </div>
     </div>
     <div class="story-visual reveal">
-      <div class="orbit">
-        <div class="orb-img orb-main" data-speed="0.08"><img src="https://cocosutra.com/cdn/shop/files/CocosutraMochaSugarFreeDrinkingChocolate200g-Front_Website.jpg?v=1702479454&width=720" alt="Mocha sugar free drinking chocolate"></div>
-        <div class="orb-img orb-mini" data-speed="-0.06"><img src="https://cocosutra.com/cdn/shop/files/CocosutraFocusSugarFreeDrinkingChocolateMix200g-EnhancesMentalAlertness-Front_Website.jpg?v=1702469452&width=520" alt="Focus functional drinking chocolate"></div>
-        <div class="orb-img orb-sachet" data-speed="0.12"><img src="https://cocosutra.com/cdn/shop/files/COCOSU_1_b5f49af6-faed-4530-b3fc-736b5dbb85fb.jpg?v=1745492195&width=520" alt="Functional drinking chocolate sachets"></div>
-        <div class="ingredient-pill" data-speed="-0.04"><b>Stevia + Erythritol</b><span>Zero calorie natural sweeteners, blended to avoid the usual aftertaste.</span></div>
+      <div class="orbit video-card">
+        <video class="story-video" autoplay muted loop playsinline preload="metadata" aria-label="Cocosutra products in action">
+          <source src="assets/cocosutra-products-action.mp4" type="video/mp4">
+        </video>
+        <div class="video-logo-cover" aria-hidden="true"></div>
+        <div class="ingredient-pill"><b>Stevia +<br>Erythritol</b><span>Zero calorie natural sweeteners blended to avoid the usual aftertaste.</span></div>
       </div>
     </div>
     <div class="proof-grid story-proof reveal">
