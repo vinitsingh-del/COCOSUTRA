@@ -47,10 +47,33 @@ img{display:block;max-width:100%}
 .hero-frame h1 .hero-kicker{display:block;font-size:12px;line-height:1;letter-spacing:.12em;font-weight:850;color:var(--green);margin-bottom:10px}
 .hero-frame h1 em{font-style:italic;color:var(--green);font-weight:700}
 .hero-frame h1 .hero-subline{display:block;margin-top:6px;font-weight:520;color:#2e3c35;letter-spacing:-.035em}
-.hero-art{position:relative;min-height:430px;display:grid;place-items:center;max-width:820px;margin:0 auto}
+.hero-art{position:relative;min-height:430px;display:grid;place-items:center;max-width:820px;margin:0 auto;isolation:isolate}
 .hero-art::before{content:'';position:absolute;width:min(43.2vw,312px);height:min(46.4vw,360px);border-radius:47% 53% 45% 55%;background:linear-gradient(145deg,#244c36 0%,#477654 58%,#8bad85 100%);transform:rotate(18deg);opacity:.98;box-shadow:0 34px 76px rgba(47,91,66,.2);animation:axisRotate 14s linear infinite;transform-origin:center}
 .hero-art::after{content:'';position:absolute;width:min(38vw,264px);height:min(27vw,168px);border-radius:50%;background:radial-gradient(closest-side,rgba(47,91,66,.16),transparent 70%);bottom:22px;filter:blur(10px)}
+.hero-slide{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transform:translateY(14px) scale(.975);transition:opacity .7s ease,transform .7s ease;z-index:2;pointer-events:none}
+.hero-slide.active{opacity:1;transform:translateY(0) scale(1)}
 .hero-product{position:relative;z-index:2;width:min(43vw,307px);height:auto;filter:drop-shadow(0 30px 34px rgba(15,21,18,.25));animation:float 5.5s ease-in-out infinite;transition:transform .45s ease,filter .45s ease}
+.hero-layer{position:relative;z-index:2;width:min(80vw,620px);height:auto;max-height:410px;object-fit:contain;filter:drop-shadow(0 24px 44px rgba(15,21,18,.16))}
+.hero-slide:nth-child(2) .hero-layer{width:min(78vw,590px)}
+.hero-slide:nth-child(3) .hero-layer{width:min(82vw,620px)}
+.hero-composite{position:relative;z-index:2;width:min(86vw,690px);min-height:360px;display:grid;align-items:center}
+.hero-testimonial{grid-template-columns:minmax(220px,.86fr) minmax(220px,.78fr);gap:18px}
+.hero-glass-copy{justify-self:end;text-align:left;background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.72);box-shadow:0 22px 64px rgba(15,21,18,.13);backdrop-filter:blur(20px) saturate(1.12);border-radius:24px;padding:24px;max-width:330px}
+.hero-glass-copy b{display:block;font-size:clamp(22px,2.9vw,34px);line-height:1.04;letter-spacing:-.045em;color:#0f1512;margin-bottom:18px}
+.hero-glass-copy p{font-size:clamp(15px,1.8vw,19px);line-height:1.28;color:#24372d;margin:0}
+.hero-glass-copy strong{display:block;margin-top:2px;font-weight:850}
+.hero-stars{display:block;color:#153d2a;letter-spacing:.16em;font-size:18px;margin-top:18px}
+.hero-person{justify-self:start;width:min(32vw,265px);max-height:360px;object-fit:contain;filter:drop-shadow(0 24px 34px rgba(15,21,18,.18))}
+.hero-biology{grid-template-columns:minmax(190px,.72fr) minmax(220px,.75fr) minmax(160px,.56fr);gap:12px}
+.bio-title{position:absolute;top:-2px;left:0;right:0;text-align:center;font-size:clamp(18px,2.3vw,28px);font-weight:900;letter-spacing:.08em;color:#0f1512;z-index:5}
+.bio-copy{justify-self:end;text-align:left;background:rgba(255,255,255,.56);border:1px solid rgba(255,255,255,.65);border-radius:22px;padding:20px;backdrop-filter:blur(18px);box-shadow:0 18px 54px rgba(15,21,18,.1)}
+.bio-copy h3,.bio-nmn h3{font-size:clamp(32px,4.2vw,54px);line-height:.9;letter-spacing:-.06em;margin:0 0 12px;color:#0f1512}
+.bio-copy p,.bio-nmn p{font-size:clamp(14px,1.7vw,18px);line-height:1.18;color:#0f1512;margin:0}
+.bio-copy ul{list-style:none;display:grid;gap:12px;margin:0;padding:0}
+.bio-copy li{position:relative;padding-right:28px}
+.bio-copy li::after{content:'';position:absolute;right:0;top:.65em;width:18px;height:2px;background:#0f1512;box-shadow:18px 0 0 #0f1512}
+.bio-product{justify-self:center;width:min(33vw,260px);filter:drop-shadow(0 26px 32px rgba(15,21,18,.22));transform:rotate(10deg);animation:float 5.5s ease-in-out infinite;margin-top:26px}
+.bio-nmn{justify-self:start;text-align:center;background:rgba(255,255,255,.56);border:1px solid rgba(255,255,255,.65);border-radius:22px;padding:20px;backdrop-filter:blur(18px);box-shadow:0 18px 54px rgba(15,21,18,.1)}
 .hero-art:hover .hero-product{transform:translateY(-4px) scale(1.015);filter:drop-shadow(0 34px 40px rgba(15,21,18,.28))}
 .benefit-tabs{max-width:980px;margin:0 auto 10px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(15,21,18,.42);background:rgba(255,255,255,.9);box-shadow:0 18px 44px rgba(15,21,18,.07);clip-path:polygon(24px 0,100% 0,100% 100%,0 100%,0 24px);overflow:hidden}
 .benefit-card{min-height:78px;border:0;border-right:1px solid rgba(15,21,18,.38);background:rgba(255,255,255,.68);padding:16px 18px;text-align:center;display:grid;place-items:center;position:relative;overflow:hidden;transition:background .24s ease,color .24s ease}
@@ -273,6 +296,11 @@ img{display:block;max-width:100%}
   .hero-art{min-height:410px}
   .hero-art::before{width:240px;height:298px}
   .hero-product{width:257px}
+  .hero-layer{width:min(92vw,560px);max-height:365px}
+  .hero-composite{width:94vw;min-height:350px}
+  .hero-glass-copy{padding:20px;max-width:300px}
+  .hero-person{width:min(38vw,230px)}
+  .bio-product{width:min(36vw,230px)}
   .benefit-tabs{grid-template-columns:repeat(4,1fr);margin-inline:22px;overflow:hidden}
   .benefit-tabs::-webkit-scrollbar{display:none}
   .benefit-card{min-height:72px;padding:12px 8px}
@@ -319,6 +347,24 @@ img{display:block;max-width:100%}
   .hero-art{min-height:390px}
   .hero-art::before{width:208px;height:259px}
   .hero-product{width:228px}
+  .hero-layer{width:112vw;max-height:350px}
+  .hero-slide:nth-child(2) .hero-layer{width:108vw}
+  .hero-slide:nth-child(3) .hero-layer{width:114vw}
+  .hero-composite{width:100%;min-height:350px}
+  .hero-testimonial{grid-template-columns:.92fr .72fr;gap:4px}
+  .hero-glass-copy{padding:14px;border-radius:18px;max-width:190px}
+  .hero-glass-copy b{font-size:20px;margin-bottom:10px}
+  .hero-glass-copy p{font-size:13px}
+  .hero-stars{font-size:13px;margin-top:10px}
+  .hero-person{width:168px;max-height:278px}
+  .hero-biology{grid-template-columns:.8fr .82fr;gap:4px}
+  .bio-title{top:4px;font-size:18px}
+  .bio-copy{padding:13px;border-radius:16px;margin-top:34px}
+  .bio-copy h3,.bio-nmn h3{font-size:28px}
+  .bio-copy p,.bio-nmn p{font-size:12px}
+  .bio-copy ul{gap:8px}
+  .bio-product{width:156px;grid-row:1 / span 2;grid-column:2;margin-top:38px}
+  .bio-nmn{grid-column:1 / -1;justify-self:center;padding:12px 20px;border-radius:16px}
   .benefit-tabs{margin-inline:0;grid-template-columns:repeat(4,1fr)}
   .benefit-card{min-height:66px;padding:10px 6px}
   .benefit-card b{font-size:12px;line-height:1.08}
@@ -364,6 +410,8 @@ img{display:block;max-width:100%}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal,.reveal-stagger>*{opacity:1!important;transform:none!important}
+  .hero-slide{opacity:0!important;transform:none!important}
+  .hero-slide.active{opacity:1!important}
 }
 </style>
 </head>
@@ -382,7 +430,32 @@ img{display:block;max-width:100%}
   <section class="hero-frame" id="buy">
     <h1><span class="hero-kicker">Pure beta-NMN 500mg</span>Cellular energy, <em>recovery</em><span class="hero-subline">and healthy ageing support.</span></h1>
     <div class="hero-art">
-      <img class="hero-product" src="gataca-nmn-500-cutout.png" alt="GATACA Pure beta-NMN 500 mg">
+      <div class="hero-slide active"><img class="hero-product" src="gataca-nmn-500-cutout.png" alt="GATACA Pure beta-NMN 500 mg"></div>
+      <div class="hero-slide">
+        <div class="hero-composite hero-testimonial">
+          <div class="hero-glass-copy">
+            <b>Samantha Ruth Prabhu</b>
+            <p>It's like my body is performing at its best on every level.<strong>I love it.</strong></p>
+            <span class="hero-stars">★★★★★</span>
+          </div>
+          <img class="hero-person" src="gataca-hero-samantha-person.png" alt="Samantha Ruth Prabhu">
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-composite hero-biology">
+          <div class="bio-title">THE BIOLOGY</div>
+          <div class="bio-copy">
+            <h3>NAD+</h3>
+            <ul>
+              <li><p>Essential coenzyme in every cell</p></li>
+              <li><p>Drives cellular energy</p></li>
+              <li><p>Supports mitochondria & sirtuins</p></li>
+            </ul>
+          </div>
+          <img class="bio-product" src="gataca-nmn-500-cutout.png" alt="GATACA NMN bottle biology">
+          <div class="bio-nmn"><h3>NMN</h3><p>Direct precursor<br>to NAD+</p></div>
+        </div>
+      </div>
     </div>
     <div class="benefit-tabs">
       <div class="benefit-card active"><b>Enhances endurance*</b></div>
@@ -623,6 +696,15 @@ img{display:block;max-width:100%}
 const preloader=document.getElementById('preloader');
 window.addEventListener('load',()=>setTimeout(()=>preloader?.classList.add('hide'),450));
 setTimeout(()=>preloader?.classList.add('hide'),2200);
+const heroSlides=[...document.querySelectorAll('.hero-slide')];
+let heroSlideIndex=0;
+if(heroSlides.length>1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(()=>{
+    heroSlides[heroSlideIndex].classList.remove('active');
+    heroSlideIndex=(heroSlideIndex+1)%heroSlides.length;
+    heroSlides[heroSlideIndex].classList.add('active');
+  },5000);
+}
 document.querySelectorAll('.size-card').forEach(card=>{
   card.addEventListener('click',()=>{
     document.querySelectorAll('.size-card').forEach(c=>c.classList.remove('active'));
